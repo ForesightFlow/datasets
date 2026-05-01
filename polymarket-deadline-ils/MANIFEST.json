@@ -1,0 +1,33 @@
+{
+  "version": "paper3a-v3",
+  "files": [
+    {
+      "name": "data/population_ils_dl.parquet",
+      "size": "314 KB",
+      "rows": 2375,
+      "sha256": "5be5d0def971efe2bb3df9d5999e4817d0c84ddcd42d704bb376f207d12417f9"
+    },
+    {
+      "name": "data/population_ils_dl.csv",
+      "size": "726 KB",
+      "rows": 2375,
+      "sha256": "2ccf31f1dc6be45e286e8b0fe7d4060cf4127cb5687d5dcae3c1feacbf5567d7"
+    }
+  ],
+  "tag": "polymarket-deadline-ils-v3",
+  "release_date": "April 30, 2026",
+  "changes_from_v2": [
+    "Add B2 hazard-adjusted ILS columns: expected_decay_price, ils_dl_adj, b2_method",
+    "B1 T_event second-pass validation: 57.8% exact match, 68.9% within 24h across 50 stratified markets",
+    "B7 anchor robustness recomputed on 88-market post-fix sample",
+    "B5 parametric bootstrap KS added: exp p=0.224, weibull p=0.043, lognormal p=0.083",
+    "B3 median bootstrap CIs for all 6 category×period cells",
+    "B8 three-sample reporting (all_computed, regulatory_announcement, anchor_robust)"
+  ],
+  "changes_from_v1": [
+    "Fix edge filter: p_open threshold changed from |p_open-0.5|>0.4 to >=0.4; 2 markets with p_open=0.9 correctly excluded (n_ils: 90→88)",
+    "Fix exclusion_reason for ils_compute_error: now includes exception type (all 230 are PriceLookupError)",
+    "Fix FFIC localization: market_id_prefix lookup and prefix matching (was returning NaN market_ids in v1)",
+    "Bootstrap tz_convert fix (applied in v1 run but documented here)"
+  ]
+}

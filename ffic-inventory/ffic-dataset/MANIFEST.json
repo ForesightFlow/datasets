@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "tag": "ffic-inventory-v1",
+  "released": "2026-04-29",
+  "files": {
+    "data/ffic-v1.jsonl": {
+      "sha256": "985b66814f273d37951fd211ac98d2e725e3ae4ac6df3e135ea8f23cc5fd480c",
+      "size_bytes": 20530,
+      "n_lines": 8
+    },
+    "data/ffic-v1.csv": {
+      "sha256": "cf63832db633a9132664b33ab718ffa3baa8380f735b6c125d6b27331e997801",
+      "size_bytes": 5905,
+      "n_lines": 34
+    }
+  },
+  "counts": {
+    "n_cases": 8,
+    "n_markets": 32,
+    "total_volume_usdc_approx": 4233111307,
+    "n_markets_trade_history_available": 25,
+    "n_markets_trade_history_blocked": 7
+  }
+}

@@ -1,0 +1,33 @@
+case_id,case_title,case_date,category,market_id_prefix,market_label,resolution_outcome,resolution_year,volume_total_usdc_approx,trade_history_available,trade_count,trade_history_blocker
+fficd-001,2024 U.S. Presidential Election,2024-11-05,regulatory_decision,0xdd22472e,Donald Trump wins 2024 U.S. Presidential Election,YES,2024,1531479285,False,,subgraph_indexer_capacity_exceeded
+fficd-001,2024 U.S. Presidential Election,2024-11-05,regulatory_decision,0xc6485bb7,Kamala Harris wins 2024 U.S. Presidential Election,NO,2024,1037039118,False,,subgraph_indexer_capacity_exceeded
+fficd-001,2024 U.S. Presidential Election,2024-11-05,regulatory_decision,0x55c55189,Other Republican wins 2024 U.S. Presidential Election,NO,2024,241655100,False,,subgraph_indexer_capacity_exceeded
+fficd-001,2024 U.S. Presidential Election,2024-11-05,regulatory_decision,0x230144e3,Michelle Obama wins 2024 U.S. Presidential Election,NO,2024,153382276,False,,subgraph_indexer_capacity_exceeded
+fficd-002,October 2024 Iran strike on Israel,2024-10-01,military_geopolitics,0xc1b6d712,Iran strike on Israel today,YES,2024,148732,True,309,
+fficd-002,October 2024 Iran strike on Israel,2024-10-01,military_geopolitics,0x93727420,Another Iran strike on Israel by Friday,NO,2024,100479,True,607,
+fficd-002,October 2024 Iran strike on Israel,2024-10-01,military_geopolitics,0xc8312853,Iran strike on Israel by November 8,NO,2024,788895,True,1929,
+fficd-003,2026 U.S.-Iran Conflict Cluster,2026-02-01,military_geopolitics,0x6d0e09d0,US forces enter Iran by April 30,YES,2026,269049107,partial,,subgraph_indexer_capacity_exceeded; price history available via CLOB endpoint
+fficd-003,2026 U.S.-Iran Conflict Cluster,2026-02-01,military_geopolitics,0x4c5701bc,US x Iran ceasefire by April 7,YES,2026,173696184,partial,,subgraph_indexer_capacity_exceeded; price history available via CLOB endpoint
+fficd-003,2026 U.S.-Iran Conflict Cluster,2026-02-01,military_geopolitics,0xd4bbf7f6,Khamenei out by February 28,NO,2026,131114971,True,113472,
+fficd-003,2026 U.S.-Iran Conflict Cluster,2026-02-01,military_geopolitics,0x9823d715,Israel-Hezbollah ceasefire by April 18,NO,2026,98599882,True,11035,
+fficd-003,2026 U.S.-Iran Conflict Cluster,2026-02-01,military_geopolitics,0x3488f31e,US strikes Iran by February 28,NO,2026,89652867,True,109072,
+fficd-003,2026 U.S.-Iran Conflict Cluster,2026-02-01,military_geopolitics,0x70909f0b,Khamenei out by March 31,NO,2026,63238698,True,89267,
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0xbfa45527,Maduro in US custody by January 31,YES,2026,11034070,True,3350,
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0x3b4b3c1b,US x Venezuela military engagement by January 15,YES,2026,3298466,False,0,trade_history_not_collected
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0x92a5c555,US x Venezuela military engagement by January 31,YES,2026,931284,True,3449,
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0xdfaaf716,Trump invokes War Powers against Venezuela by January 9,YES,2026,982231,True,2266,
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0x79801a0f,Trump invokes War Powers against Venezuela by January 31,YES,2026,731648,True,4104,
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0x3ad10b05,US x Venezuela military engagement by March 31,YES,2026,1444954,True,8327,
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0xe377cc3f,Nicolás Maduro seen in public by January 5,YES,2026,1588800,False,0,trade_history_not_collected
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0x7f3c6b90,US invades Venezuela by January 31 (Van Dyke traded YES; resolved NO),NO,2026,8368551,True,17776,
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0x62b0cd59,US x Venezuela military engagement by December 31 (deadline-miss; op Jan 3),NO,2025,51073021,True,60785,
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0xbea5d517,US x Venezuela military engagement by November 30 (deadline-miss),NO,2025,9188344,False,0,trade_history_not_collected
+fficd-004,January 2026 U.S.–Venezuela / Maduro operation cluster,2026-01-03,military_geopolitics,0x3f8c674a,US forces in Venezuela again by January 31 (second-incursion; resolved NO),NO,2026,569370,True,3668,
+fficd-005,Bitcoin ETF SEC approval,2024-01-10,regulatory_decision,0xb36886bb,Bitcoin ETF approved by January 15,YES,2024,12622418,True,7515,
+fficd-006,Google Year-in-Search rankings 2025,2025-12-01,corporate_disclosure,0x54361608,Gene Hackman #1 in Passings category,YES,2025,2952428,partial,453,subgraph_indexer_capacity_exceeded; price history available via CLOB endpoint
+fficd-006,Google Year-in-Search rankings 2025,2025-12-01,corporate_disclosure,0x45126353,Ismail Haniyeh #1 in Passings category,NO,2025,1591632,True,358,
+fficd-006,Google Year-in-Search rankings 2025,2025-12-01,corporate_disclosure,0x26477123,Zendaya #1 in Actors category,NO,2025,755946,True,299,
+fficd-007,FTX / SBF case cluster,2024-03-28,regulatory_decision,0xf4078ddd,Biden pardons SBF,NO,2025,8209071,True,13787,
+fficd-007,FTX / SBF case cluster,2024-03-28,regulatory_decision,0x2b8608c1,SBF sentenced to 50+ years,NO,2024,363283,True,493,
+fficd-007,FTX / SBF case cluster,2024-03-28,regulatory_decision,0x02c8326d,FTX no payouts in 2024,YES,2024,952525,True,2148,
+fficd-008,Romanian presidential election 2024-2025,2024-12-08,regulatory_decision,0x9872fe47,Ciuca wins Romanian Presidential Election 2024,NO,2025,326507671,True,9288,

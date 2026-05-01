@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite the accompanying paper."
+type: dataset
+title: "coordination-traces-100: LLM Multi-Agent Coordination Traces on 100 Prediction Markets"
+abstract: >
+  Full reasoning traces for five LLM multi-agent coordination configurations
+  evaluated on 100 resolved Polymarket binary prediction markets. Accompanies
+  "Coordination as an Architectural Layer for LLM-Based Multi-Agent Systems"
+  (Nechepurenko & Shuvalov, 2026).
+authors:
+  - family-names: Nechepurenko
+    given-names: Maksym
+  - family-names: Shuvalov
+    given-names: Pavel
+version: "paper-v05"
+date-released: "2026-04-28"
+license: CC-BY-4.0
+repository-code: "https://github.com/ForesightFlow/datasets"
+url: "https://github.com/ForesightFlow/datasets/tree/main/coordination-traces-100"
+# Harness code that generated this dataset:
+# https://github.com/ForesightFlow/coordination-experiment/tree/paper-v05
+preferred-citation:
+  type: article
+  title: >
+    Coordination as an Architectural Layer for LLM-Based Multi-Agent Systems:
+    A Position Paper with an Information-Controlled Empirical Design
+  authors:
+    - family-names: Nechepurenko
+      given-names: Maksym
+    - family-names: Shuvalov
+      given-names: Pavel
+  year: 2026
+  # TODO(claude-code): replace with arXiv DOI once the paper is posted
+  # doi: "10.48550/arXiv.XXXX.XXXXX"
+  # url: "https://arxiv.org/abs/XXXX.XXXXX"
+  notes: "Working paper; arXiv DOI to be added after submission"

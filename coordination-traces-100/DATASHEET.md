@@ -1,0 +1,332 @@
+# Datasheet for coordination-traces-100
+
+Following Gebru et al. (2021), "Datasheets for Datasets."
+
+---
+
+## 1. Motivation
+
+**For what purpose was the dataset created?**
+
+To provide a reproducible, fully-traced empirical record of how five distinct
+LLM multi-agent coordination architectures perform on real-world binary
+prediction markets. The dataset supports the claims in "Coordination as an
+Architectural Layer for LLM-Based Multi-Agent Systems" (Nechepurenko &
+Shuvalov, 2026), specifically the pre-registered Murphy-decomposition
+signatures (paper §3.5) for each configuration.
+
+**What gap does it fill?**
+
+Prior LLM forecasting datasets (e.g., Zou et al. 2022, Schoenegger et al.
+2024) report final probabilities but not the full multi-agent interaction
+traces — system prompts, inter-agent messages, tool calls, token budgets —
+needed to study coordination as an independent variable. This dataset makes
+those traces public and self-contained.
+
+**Who created the dataset, and on whose behalf?**
+
+Maksym Nechepurenko and Pavel Shuvalov, under the ForesightFlow research
+project. No external funding or institutional affiliation required the
+creation of this dataset; it was produced as part of the academic paper's
+reproducibility package.
+
+**Any other comments?**
+
+This is the Phase 0.5 dataset (100 markets). A larger Phase 1A dataset
+(~500–700 markets) is planned for a follow-up publication.
+
+---
+
+## 2. Composition
+
+**What do the instances represent?**
+
+Each instance (row in `data/traces/*.jsonl`) is one (coordination
+configuration, market) prediction. It contains: the final probability
+emitted by the configuration, the market's ground-truth outcome, the market
+baseline (Polymarket consensus), and the full LLM interaction trace including
+all system prompts, user prompts, model responses, tool calls, token counts,
+and per-call costs.
+
+**How many instances are there?**
+
+500 total: 100 markets × 5 configurations. Markets are stored separately in
+`data/markets.jsonl` (100 rows).
+
+**What data does each instance consist of?**
+
+- *Prediction:* a scalar in [0, 1] emitted as `FINAL_PROBABILITY: <p>`.
+- *Ground truth:* binary outcome (0 or 1) from Polymarket resolution.
+- *Baseline:* Polymarket mid-price ≥24h before resolution (used to compute
+  Alpha = Brier_market − Brier_agent).
+- *Trace:* full LLM call sequence — system prompt, user prompt, response
+  text, tool calls (getMarketDetails, getPriceHistory; searchWeb was disabled),
+  usage (input/output tokens), cost (USD), wall time (ms).
+
+**Is there a label or target associated with each instance?**
+
+Yes: `outcome` (0 or 1) is the ground-truth resolution. `baseline` is the
+market-consensus probability used to compute Alpha (signed skill score).
+
+**Is any information missing?**
+
+`description` fields in markets are occasionally empty (the ForesightFlow
+fixture inherits this from Polymarket metadata incompleteness). Tool call
+results for `getMarketDetails` and `getPriceHistory` are embedded in
+`trace.calls[*].response.toolCalls[*].result` and reflect live Polymarket
+Gamma/CLOB API responses at prediction time (2026 April data).
+
+**Are there recommended data splits?**
+
+The dataset is small (100 markets) and not designed for train/test splits.
+It is intended for descriptive analysis and Murphy decomposition, not
+supervised learning. If used for downstream model training, we explicitly
+discourage treating the configuration traces as labelled training data for
+forecasting (see §7 Dis-anticipated uses).
+
+**Are there any errors, sources of noise, or redundancies?**
+
+Six predictions (1.2%) failed due to transient Anthropic API errors
+(connection reset, request timeout) and fell back to the 0.5 prior.
+These are marked with a `_failure` field. The Murphy decomposition in the
+paper uses all 100 markets per config, treating 0.5 fallbacks as predictions.
+A sensitivity analysis excluding fallback markets is included in
+`analysis/phase05_bootstrap.py` (table_sensitivity.csv).
+
+**Is the dataset self-contained?**
+
+Yes. No external API calls are needed to consume the dataset. The
+`coordination-experiment` harness code is referenced for reproduction
+only, not for analysis of the published traces.
+
+**Does the dataset contain data that might be considered confidential?**
+
+No. All market data is sourced from public Polymarket on-chain records via
+the public Gamma API. LLM reasoning traces do not contain personal data.
+No API keys, user IDs, or internal system identifiers are present.
+
+---
+
+## 3. Collection Process
+
+**How was the data associated with each instance acquired?**
+
+Market metadata (question, description, category, resolution outcome,
+baseline price, volume) was sourced from ForesightFlow's database, which
+parses public Polymarket Gamma API responses. The baseline mid-price was
+computed as the last available CLOB mid-price at least 24 hours before
+the market resolution timestamp.
+
+LLM prediction traces were generated by running the `coordination-experiment`
+harness (tag `paper-v05`) against the `data/fixture_phase05.jsonl` fixture,
+using `claude-opus-4-6` via the Anthropic Messages API with `temperature=0.3`,
+`maxTokensPerMarket=4000`, `maxTokensPerCall=1000`, `agentCount=1`. Web
+search was disabled (`ConfigurableAgentTools(webSearchEnabled=false)`) to
+prevent post-resolution information leakage.
+
+**Over what timeframe was the data collected?**
+
+Market resolution dates span 2025-08-15 to 2026-04-01 (all after the
+`claude-opus-4-6` training cutoff of 2025-08-01). The LLM predictions were
+generated on 2026-04-27/28 during a single ~3-hour run.
+
+**Were any ethical review processes conducted?**
+
+No IRB or ethics review was required. All source data is publicly available
+on-chain. The LLM API usage is governed by Anthropic's Terms of Service,
+which permit publication of model outputs for research purposes.
+
+**Did you collect the data from the individuals directly?**
+
+No. The market questions and resolution outcomes are public on-chain records
+from the Polymarket prediction market platform.
+
+---
+
+## 4. Preprocessing / Cleaning / Labeling
+
+**Was any preprocessing/cleaning/labeling of the data done?**
+
+Yes. Several preprocessing steps were applied to the fixture:
+
+1. **Post-cutoff filter.** Only markets resolving strictly after
+   `MODEL_TRAINING_CUTOFF=2025-08-01` were included, to ensure the model
+   had no direct training-time knowledge of the outcome.
+
+2. **Decile balancing.** The 100-market fixture was constructed with
+   10 markets per baseline-decile bucket (0–0.1, 0.1–0.2, …, 0.9–1.0),
+   balanced across the 6 category labels. This ensures the dataset's
+   baseline Brier (uncertainty component UNC) is representative and not
+   dominated by near-certain markets.
+
+3. **Baseline inversion correction.** During fixture generation, a YES/NO
+   price inversion bug was identified: some Polymarket CLOB responses return
+   the NO token price rather than the YES token price as the first element.
+   The fix is applied in `PolymarketAgentTools.resolveYesTokenId()` in
+   `src/tools/polymarket-tools.ts`, which explicitly fetches the tokenId
+   tagged with `outcome="Yes"` from the Gamma API and uses that to index the
+   CLOB price series. Markets generated before this fix was applied were
+   excluded from the Phase 0.5 fixture.
+
+4. **Volume filter.** No minimum volume filter was applied in Phase 0.5
+   (all markets with `volumeUsdc >= 0` were eligible). This is a deliberate
+   methodological choice: ILS (insider-liquidity score) filtering is analysed
+   as a sensitivity in the paper, not a primary filter (see paper §5.2).
+
+**Was the raw data saved in addition to the preprocessed data?**
+
+The raw Polymarket Gamma API responses are not archived here. The
+`fixture_phase05.jsonl` file in the `coordination-experiment` repository
+is the primary source of record for market metadata.
+
+**Is the software used to preprocess/clean/label the data available?**
+
+Yes. `src/sources/foresightflow.ts` (Zod schema + JSONL loader),
+`src/tools/polymarket-tools.ts` (Gamma + CLOB adapter), and
+`examples/run-validation.ts` (runner) are all published under MIT in
+`github.com/ForesightFlow/coordination-experiment` at tag `paper-v05`.
+
+---
+
+## 5. Uses
+
+**Has the dataset been used for any tasks already?**
+
+Yes. The dataset was used to produce Table 1 (Murphy decomposition
+leaderboard) and Figure 4 (REL×RES scatter) in the accompanying paper.
+
+**What (other) tasks could the dataset be used for?**
+
+Anticipated uses:
+
+- **Failure-mode linguistics.** Analysis of which lexical or structural
+  features of `trace.calls[*].response.text` correlate with large prediction
+  errors, across configurations.
+- **Prompt sensitivity analysis.** Ablations on `roleInstructions` content
+  while holding `COMMON_SYSTEM_HEADER` fixed.
+- **Distillation.** Using high-performing (low-Brier) configurations'
+  traces as preference data for fine-tuning smaller forecasting models.
+- **Alternative scoring rules.** Re-scoring the 500 predictions under
+  log score, spherical score, or calibration-only metrics.
+- **Replication with different models.** The `coordination-experiment`
+  harness accepts any `LLMClient` adapter; the fixture is reusable.
+
+Dis-anticipated uses:
+
+- **Training forecasting models that overfit to Polymarket market structure.**
+  The 100 markets are too few for robust training and may lead to
+  category-specific overfitting.
+- **Drawing causal conclusions about model capability differences.** The
+  dataset holds model fixed (claude-opus-4-6) and varies coordination
+  architecture. Comparisons across models require a separate study.
+- **Treating the dataset as a benchmark for competitive model ranking.**
+  It was not designed for leaderboard-style evaluation of arbitrary LLMs.
+
+**Is there anything about the composition of the dataset or the way it was
+collected and preprocessed/cleaned/labeled that might impact future uses?**
+
+The 6 fallback predictions (0.5 prior) could affect downstream analyses
+that assume all predictions are model-generated. They are clearly marked
+with `_failure` and should be excluded from analyses that require
+model-generated probabilities, or treated as a worst-case lower bound.
+
+---
+
+## 6. Distribution
+
+**How will the dataset be distributed?**
+
+Via GitHub at `github.com/ForesightFlow/datasets` under the path
+`coordination-traces-100/`, tagged `paper-v05`.
+
+**When will the dataset be distributed?**
+
+Concurrent with the paper preprint submission.
+
+**Will the dataset be distributed under a copyright or other intellectual
+property (IP) license?**
+
+Yes. [Creative Commons Attribution 4.0 International (CC-BY 4.0)](LICENSE).
+Users may share, adapt, and build upon the dataset for any purpose, including
+commercial use, provided appropriate credit is given.
+
+**Have any third parties imposed IP-based or other restrictions?**
+
+No. Polymarket market metadata is public on-chain data. Anthropic's Terms
+of Service permit publication of API outputs for research purposes.
+
+---
+
+## 7. Maintenance
+
+**Who is supporting/hosting/maintaining the dataset?**
+
+The ForesightFlow team (Maksym Nechepurenko, Pavel Shuvalov). Contact:
+open an issue at `github.com/ForesightFlow/datasets`.
+
+**How can the owner/curator/manager of the dataset be contacted?**
+
+GitHub issues at `github.com/ForesightFlow/datasets`.
+
+**Will the dataset be updated?**
+
+A Phase 1A dataset (~500–700 markets) is planned. It will be released as a
+separate versioned directory (`coordination-traces-700` or similar) rather
+than updating this dataset in place, to preserve reproducibility of the
+Phase 0.5 paper results. This dataset is considered frozen at `paper-v05`.
+
+**Will older versions of the dataset continue to be supported?**
+
+The `paper-v05` tag in the datasets repository will be preserved
+indefinitely. The dataset is frozen; no corrections are anticipated unless
+a factual error in the fixture is discovered (in which case an erratum will
+be published as a GitHub issue and reflected in the tag).
+
+**If others want to extend or augment the dataset, how should they proceed?**
+
+Open a pull request against `github.com/ForesightFlow/datasets` with a
+proposed new directory following the same schema. For changes to the
+existing Phase 0.5 data, open an issue first.
+
+---
+
+## 8. Ethics
+
+**Were any ethical review processes conducted?**
+
+No formal IRB process was conducted. The dataset involves no human
+subjects, personally identifiable information, or sensitive personal data.
+
+**Does the dataset relate to people?**
+
+Only indirectly: the prediction market questions concern public events
+(political outcomes, cryptocurrency prices, sports results). No individual
+person's data is recorded.
+
+**Might the data be used to harass or harm individuals?**
+
+Not directly. The markets concern aggregate outcomes, not individuals.
+The one exception is any market with a named individual as the resolution
+subject (e.g., "Will [politician] win [election]?"); these are publicly
+listed Polymarket markets and the outcomes are public record.
+
+**Are there tasks for which the dataset should not be used?**
+
+See §5 Dis-anticipated uses. In addition, the dataset should not be used
+to make claims about the general capability of `claude-opus-4-6` relative
+to other models; the experimental design controls for model and varies
+coordination architecture only.
+
+**Polymarket data provenance.**
+
+All market metadata is sourced from the Polymarket platform via its public
+Gamma API (`gamma.polymarket.com`) and CLOB API (`clob.polymarket.com`).
+Polymarket market outcomes are settled on-chain via the UMA optimistic
+oracle and are publicly verifiable. No private Polymarket data was accessed.
+
+**LLM output provenance.**
+
+Reasoning traces were generated via the Anthropic Messages API. Anthropic's
+usage policy (as of April 2026) permits publication of model outputs in
+research datasets. No user conversations or private data were involved in
+generation.

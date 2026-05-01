@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "tag": "polymarket-resolution-typology-v1",
+  "released": "2026-04-28",
+  "cutoff": "2026-04-27T00:00:00Z",
+  "files": {
+    "data/typology-v1.jsonl.gz": {
+      "sha256": "d24b6846cf52866cb026d69b3ce0a48ee40bf7d05cfce8dac5e98c20815d7b81",
+      "size_bytes": 94493132,
+      "n_lines": 911237
+    },
+    "data/typology-v1.parquet": {
+      "sha256": "7e695c6c34708bd8abefb94d95160f02b1d200e495c39dbc8a502ccd31e20739",
+      "size_bytes": 160014262,
+      "n_rows": 911237
+    }
+  },
+  "counts": {
+    "total": 911237,
+    "by_resolution_type": {
+      "deadline_resolved": 56318,
+      "unclassifiable": 853774,
+      "event_resolved": 1145
+    },
+    "by_category_fflow": {
+      "other": 771424,
+      "regulatory_decision": 71588,
+      "corporate_disclosure": 20645,
+      "military_geopolitics": 47580
+    }
+  }
+}

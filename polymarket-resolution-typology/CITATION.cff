@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Polymarket Resolution Typology Dataset"
+abstract: >
+  A three-class classification of 911,237 Polymarket prediction markets by resolution
+  mechanism (deadline_resolved, event_resolved, unclassifiable), released as a
+  methodological resource for ILS-based informed-trading research and related
+  studies of prediction-market structure. Snapshot cutoff: 2026-04-27.
+authors:
+  - family-names: Nechepurenko
+    given-names: Maksym
+    affiliation: "Devnull FZCO, Dubai, UAE"
+    email: maksym@devnull.ae
+version: "1.0"
+date-released: "2026-04-28"
+license: CC-BY-4.0
+repository-code: "https://github.com/ForesightFlow/datasets"
+url: "https://github.com/ForesightFlow/datasets/tree/main/polymarket-resolution-typology"
+keywords:
+  - prediction markets
+  - polymarket
+  - market microstructure
+  - resolution mechanism
+  - informed trading
+  - dataset
+  - classification
+related-identifiers:
+  - relation: IsSupplementTo
+    description: "ForesightFlow companion paper"
+    type: other
+references:
+  - type: article
+    authors:
+      - family-names: Nechepurenko
+        given-names: Maksym
+    title: "ForesightFlow: Real-Time Detection of Informed Trading in Decentralized Prediction Markets"
+    year: 2026
+    notes: "Working draft"

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite the accompanying paper."
+type: dataset
+title: "polymarket-deadline-ils: Population-Scale Deadline-ILS Scores for Polymarket"
+abstract: >
+  Population-scale Deadline Information Leakage Score (ILS^dl) dataset for
+  Polymarket prediction markets. Covers 2,375 markets in military/geopolitical,
+  regulatory, and corporate categories (volume ≥ $50K USDC), with LLM-recovered
+  event dates (T_event) and ILS^dl scores computed for 90 markets using historical
+  CLOB and subgraph trade data. ILS^dl measures the fraction of total price
+  movement that occurred before the underlying real-world event.
+authors:
+  - family-names: Nechepurenko
+    given-names: Maksym
+version: "paper3a-v3"
+date-released: "2026-04-30"
+license: CC-BY-4.0
+repository-code: "https://github.com/ForesightFlow/datasets"
+url: "https://github.com/ForesightFlow/datasets/tree/main/polymarket-deadline-ils"
+preferred-citation:
+  type: article
+  title: "Population-Scale Detection of Informed Trading on Polymarket via Deadline-ILS"
+  authors:
+    - family-names: Nechepurenko
+      given-names: Maksym
+  year: 2026
+  notes: "Working paper; arXiv DOI to be added after submission"
