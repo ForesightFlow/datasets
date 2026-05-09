@@ -1,0 +1,151 @@
+{
+  "snapshot_cutoff_utc": "2026-04-27T23:59:59Z",
+  "n_markets_in_sample": 13314,
+  "n_markets_by_class": {
+    "sports": 6800,
+    "other": 4584,
+    "crypto": 1518,
+    "politics": 412
+  },
+  "n_markets_three_class_total": 8730,
+  "sports_share_of_three_classes": 0.7789,
+  "sports_share_of_total": 0.5107,
+  "total_trading_volume_usdc": 0.0,
+  "stylized_facts": {
+    "sf1": {
+      "pooled_median_rho_base": 1.7194,
+      "pooled_median_rho_resume": 1.6486,
+      "n_markets_base": 4030,
+      "n_markets_resume": 1648,
+      "n_markets_total_disjoint": 5678,
+      "floor": 1.5,
+      "passed_base": true,
+      "passed_resume": true,
+      "per_class_median_rho_base": {
+        "crypto": 1.2034316869300912,
+        "politics": 3.518278775872229,
+        "sports": 1.4017860370946167,
+        "other": 1.6713072327601348
+      },
+      "note": "Base coverage (files 1-121) and resume coverage (files 122-168) are disjoint cohorts. Both pass the floor independently; per-class breakdown is for base coverage only. Paper 1 abstract canonical headline uses base value 1.72."
+    },
+    "sf2": {
+      "pooled_median_jump_magnitude_base": 0.5,
+      "pooled_median_jump_magnitude_resume": 0.5,
+      "n_markets_base": 6012,
+      "n_markets_resume": 4225,
+      "n_markets_total_union": 10237,
+      "n_markets_missing_terminal_obs": 3077,
+      "coverage_fraction": 0.7689,
+      "floor": 0.1,
+      "passed_base": true,
+      "passed_resume": true,
+      "note": "Cross-pass coincidence to four significant figures (0.5000) confirms structural property. The 23% missing-terminal-obs cohort classified as genuine illiquidity by CC-006b 50-market sanity sample (50/50 dark books in final hour), not computation gap."
+    },
+    "sf3": {
+      "pooled_median_basis_news": 0.013239836161979287,
+      "pooled_median_basis_control": 0.03666480281042869,
+      "n_markets_news_windows": 11344,
+      "n_markets_control_windows": 11960,
+      "note": "Aggregate-only in CC-004 source."
+    },
+    "sf4": {
+      "pooled_half_spread_by_region": {
+        "boundary-low": 0.004999999999999999,
+        "low": 0.039999999999999994,
+        "mid": 0.073375,
+        "high": 0.036250000000000004,
+        "boundary-high": 0.0050000000000000044
+      },
+      "note": "U-shaped spread profile. Mid half-spread ~49x wider than boundary spreads. This is the inverse of equity-options moneyness pattern."
+    },
+    "sf5": {
+      "pooled_median_depth_within_50bps_usdc": 0.0,
+      "pooled_median_depth_within_200bps_usdc": 0.0,
+      "pooled_median_depth_within_500bps_usdc": 200.62999725341797,
+      "full_depth_grid_pooled": {
+        "bid_1bps": 0.0,
+        "bid_5bps": 0.0,
+        "bid_25bps": 0.0,
+        "bid_100bps": 0.0,
+        "bid_200bps": 0.0,
+        "bid_500bps": 100.0,
+        "ask_1bps": 0.0,
+        "ask_5bps": 0.0,
+        "ask_25bps": 0.0,
+        "ask_100bps": 0.0,
+        "ask_200bps": 0.0,
+        "ask_500bps": 100.62999725341797
+      },
+      "note": "Median depth within 200bps of mid is structurally zero (Empirical Condition 1). Most displayed liquidity is concentrated at the 500bps tier and beyond."
+    },
+    "sf6": {
+      "per_class_trade_size_usdc": {
+        "politics": {
+          "median": 20.0,
+          "mean": 712.7561404067795,
+          "p99": 9961.958400000003
+        },
+        "sports": {
+          "median": 16.5,
+          "mean": 300.9968910681854,
+          "p99": 4000.0
+        },
+        "crypto": {
+          "median": 10.0,
+          "mean": 79.0478335636067,
+          "p99": 1231.417260019979
+        },
+        "other": {
+          "median": 7.31,
+          "mean": 43.531755765811866,
+          "p99": 579.8679999999981
+        }
+      },
+      "note": "Politics class shows ~36x mean-to-median ratio, consistent with whale concentration. Crypto class tightest distribution."
+    },
+    "sf7": {
+      "per_class_peak_hours_utc": {
+        "sports": [
+          18
+        ],
+        "other": [
+          8
+        ],
+        "crypto": [
+          14
+        ],
+        "politics": [
+          1
+        ]
+      },
+      "note": "Per-class hourly distribution in sf7-class-hour-v1.parquet. Sports peak aligned with US live-game broadcast hours (17-21 UTC). Crypto/politics peak aligned with US-EU financial-market overlap (14-16 UTC)."
+    },
+    "sf8": {
+      "per_class_surge_factor": {
+        "crypto": 24.620253164556964,
+        "politics": 0.6750178812063926,
+        "sports": 2.530334142243793,
+        "other": 0.9030340114373998
+      },
+      "pooled_surge_factor": 1.7641316830419802,
+      "note": "Final-24h activity / pre-final-day baseline. Crypto extreme surge reflects late-stage leverage-seeking speculation; politics decline reflects predictable resolution timing on calendar-bound events."
+    },
+    "sf9": {
+      "pooled_per_bucket_median_depth_within_200bps_usdc": {
+        "24h-12h": 8923.289999999999,
+        "12h-3h": 8983.42,
+        "3h-1h": 42950.56999999999,
+        "1h-5m": 49083.735,
+        "5m-0": null
+      },
+      "pooled_contraction_factors": {
+        "24h-12h_to_12h-3h": 1.006738545984721,
+        "12h-3h_to_3h-1h": 4.781093392048907,
+        "3h-1h_to_1h-5m": 1.1427958930463555
+      },
+      "monotone_collapse_pooled": false,
+      "note": "Total depth GROWS toward resolution by ~5x at the 200bps window. H1/H2/H3 refinements not in this file; reproducibility in code/sf9_hypothesis_tests.ipynb."
+    }
+  }
+}

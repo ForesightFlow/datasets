@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite the companion paper and the dataset."
+type: dataset
+title: "Polymarket Stylized Facts Dataset, v1"
+authors:
+  - family-names: "Nechepurenko"
+    given-names: "Maksym"
+    affiliation: "Devnull FZCO / ForesightFlow"
+year: 2026
+url: "https://github.com/ForesightFlow/datasets/tree/main/pmxt-stylized-facts-v1"
+license: "CC-BY-4.0"
+keywords:
+  - "prediction markets"
+  - "Polymarket"
+  - "market microstructure"
+  - "stylized facts"
+  - "event-linked perpetuals"
+  - "binary event contracts"
+  - "boundary depth asymmetry"
+  - "terminal jump magnitude"
+references:
+  - type: article
+    title: "Resolution-Aware Perpetual Futures on Binary Prediction Markets: An Empirical Risk-Design Framework Using Polymarket Data"
+    authors:
+      - family-names: "Nechepurenko"
+        given-names: "Maksym"
+    year: 2026
+    notes: "Working paper. Companion to this dataset."

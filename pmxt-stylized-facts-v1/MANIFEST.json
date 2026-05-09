@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "tag": "pmxt-stylized-facts-v1",
+  "released": "2026-05-09",
+  "cutoff": "2026-04-27T23:59:59Z",
+  "n_markets": 13314,
+  "build_note": "Path A build using local UMA cache (2026-05-07 snapshot). See CHANGELOG for sample size note vs. companion paper's 13,298.",
+  "files": {
+    "data/markets-stylized-facts-v1.parquet": {
+      "sha256": "2dd82229b7329b78301a39535f2f413a4ffdf4a0d861d35d38e8175f50dfaeec",
+      "size_bytes": 1640250,
+      "n_rows": 13314
+    },
+    "data/sf7-class-hour-v1.parquet": {
+      "sha256": "ea480ed32db9789ec4994acfd11b6fb92b788cd6707a296a374fe283d7957882",
+      "size_bytes": 3995,
+      "n_rows": 96
+    },
+    "data/sf9-bucket-aggregate-v1.parquet": {
+      "sha256": "08a8f343a386257367b0071736b4ad112553d0a9a3fe89f828becc2ac85f0b37",
+      "size_bytes": 4494,
+      "n_rows": 5
+    },
+    "data/aggregates.json": {
+      "sha256": "83a6100bf1f86bd5129a9f094bc8de98a3e63fc416c51fe712e15b3de021d34f",
+      "size_bytes": 5424
+    }
+  },
+  "counts": {
+    "total": 13314,
+    "by_class": {
+      "sports": 6800,
+      "other": 4584,
+      "crypto": 1518,
+      "politics": 412
+    }
+  }
+}
