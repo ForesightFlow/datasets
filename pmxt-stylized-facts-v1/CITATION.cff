@@ -1,13 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite the companion paper and the dataset."
 type: dataset
-title: "Polymarket Stylized Facts Dataset, v1"
+title: "pmxt-stylized-facts-v1: Stylized Facts on Polymarket Binary-Event Markets (Empirical Week 2026-04-21 to 2026-04-27)"
+version: 1.0.0
+date-released: "2026-05-10"
+doi: 10.5281/zenodo.20107449
 authors:
   - family-names: "Nechepurenko"
     given-names: "Maksym"
     affiliation: "Devnull FZCO / ForesightFlow"
-year: 2026
-url: "https://github.com/ForesightFlow/datasets/tree/main/pmxt-stylized-facts-v1"
+repository-code: "https://github.com/ForesightFlow/datasets/tree/main/pmxt-stylized-facts-v1"
+url: "https://doi.org/10.5281/zenodo.20107449"
 license: "CC-BY-4.0"
 keywords:
   - "prediction markets"

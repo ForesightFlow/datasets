@@ -1,4 +1,11 @@
 {
+  "_metadata": {
+    "schema_version": "v1",
+    "bundle_doi": "10.5281/zenodo.20108387",
+    "bundle_url": "https://doi.org/10.5281/zenodo.20108387",
+    "companion_bundle_doi": "10.5281/zenodo.20107449",
+    "build_date": "2026-05-10"
+  },
   "e2_experiment": {
     "n_markets": 13306,
     "engines": [

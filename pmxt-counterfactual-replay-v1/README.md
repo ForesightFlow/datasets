@@ -168,16 +168,47 @@ print(surv.filter((pl.col("leverage") == 5) & (pl.col("class") == "all")))
 
 ## Citation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20108387.svg)](https://doi.org/10.5281/zenodo.20108387)
+
+If you use this dataset, please cite:
+
 ```bibtex
-@misc{nechepurenko2026elp,
-  title  = {Resolution-Aware Perpetual Futures on Binary Prediction Markets:
-             An Empirical Risk-Design Framework Using Polymarket Data},
-  author = {Nechepurenko, Maksym},
-  year   = {2026},
-  note   = {Working paper. Companion datasets: pmxt-stylized-facts-v1,
-             pmxt-counterfactual-replay-v1.}
+@dataset{nechepurenko_pmxt_counterfactual_replay_v1_2026,
+  author       = {Nechepurenko, Maksym},
+  title        = {{pmxt-counterfactual-replay-v1}: Engine and
+                  Resolution-Zone Protocol Comparison Outputs on
+                  {Polymarket} Binary-Event Markets},
+  year         = {2026},
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.20108387},
+  url          = {https://doi.org/10.5281/zenodo.20108387}
 }
 ```
+
+If you also use the companion stylized-facts dataset, please cite Paper 1:
+
+```bibtex
+@unpublished{nechepurenko_pirap_2026,
+  author = {Nechepurenko, Maksym},
+  title  = {Resolution-Aware Perpetual Futures on Binary Prediction
+            Markets: An Empirical Risk-Design Framework Using
+            Polymarket Data},
+  year   = {2026},
+  note   = {Working paper. arXiv DOI to be added when assigned.}
+}
+```
+
+A `CITATION.cff` file is included for automated citation generation.
+
+---
+
+## Companion Datasets
+
+This dataset is part of the PMXT bundle family for the Event-Linked Perpetuals research programme:
+
+- **Bundle 1 (`pmxt-stylized-facts-v1`)**: Stylized-facts measurements (SF1, SF2, SF4, SF7, SF9) on the same analysis sample. DOI: [10.5281/zenodo.20107449](https://doi.org/10.5281/zenodo.20107449)
+- **Bundle 3 (`pmxt-behavioral-clusters-v1`, forthcoming)**: Per-trader behavioral cluster labels from Paper 4 (release after Paper 4 empirical run).
 
 ---
 
