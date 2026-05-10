@@ -53,6 +53,29 @@ build_manifest.json                          — SHA-256 checksums + provenance
 
 ---
 
+## Engine and Mechanic Definitions
+
+### E2 Engines (margin formula variants)
+
+| Engine | Description |
+|---|---|
+| `E0` | Baseline — constant volatility estimate, no dynamic margin |
+| `E1` | EMA-vol — exponential moving average vol, dynamic margin (no index scaling) |
+| `E2` | Recalibrated — `M_SIGMA·σ̂ + M_JUMP·p_jump·φ + KAPPA_BOOK/depth` (CC-007b: vol term has no index multiplier) |
+
+### E3 Resolution-Zone Mechanics
+
+| Mechanic | Description |
+|---|---|
+| `R0` | Naive forced expiry — no resolution-zone rules; positions held to oracle settlement |
+| `R1` | Leverage compression only — max leverage ramps linearly from L to 1× over the final Δ_R = 1 h |
+| `R2` | R1 + boundary funding correction — extra `C_BOUNDARY` per-hour funding activates when `\|mid − 0.5\| > DELTA_BOUND = 0.10` |
+| `R3` | Full multi-stage halt — M₁ zone compression (2Δ_R), M₂ notional taper (Δ_R/3 to Δ_R), M₃ position freeze (<Δ_R/3) + circuit-breaker on vol spike ≥ 3× EMA |
+
+Full parameter values: `data/engine-parameters-v1.json`.
+
+---
+
 ## Schema
 
 ### `e2a-survivability-v1.parquet`
