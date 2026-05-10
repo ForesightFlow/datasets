@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "note": "Parameters locked at CC-007b recalibration. Used by E2 and E3 simulations.",
+  "parameters": {
+    "M_SIGMA": {
+      "value": 1.0,
+      "description": "vol margin coefficient (Paper 1 \u00a7C, Eq. C-1): scalar on \u03c3\u0302 term"
+    },
+    "M_JUMP": {
+      "value": 1.5,
+      "description": "jump margin coefficient (Paper 1 \u00a7C, Eq. C-1): 1.5\u00d7 jump-prob\u00b7\u03c6"
+    },
+    "KAPPA_BOOK": {
+      "value": 0.001,
+      "description": "book-thinness coefficient (Paper 1 \u00a7C): 0.1% per unit thin depth"
+    },
+    "C_BOUNDARY": {
+      "value": 0.0005,
+      "description": "boundary correction funding rate per hour (Paper 1 \u00a77, \u00a7C)"
+    },
+    "DELTA_BOUND": {
+      "value": 0.1,
+      "description": "boundary threshold (Paper 1 \u00a77): |index - 0.5| > 0.10 \u2192 deep-ITM/OTM"
+    },
+    "DELTA_R": {
+      "value": 3600.0,
+      "description": "resolution zone half-width in seconds (Paper 1 \u00a77): 1 h"
+    },
+    "EMA_ALPHA": {
+      "value": 0.005,
+      "description": "vol EMA alpha (Paper 1 \u00a7C): ~200-event half-life"
+    },
+    "DEPTH_EPS": {
+      "value": 1.0,
+      "description": "depth floor to avoid division by zero in KAPPA_BOOK term"
+    },
+    "MAINT_FRAC": {
+      "value": 0.5,
+      "description": "maintenance margin fraction (Paper 1 \u00a7C): 50% of initial margin"
+    },
+    "SIGMA_CB": {
+      "value": 3.0,
+      "description": "circuit-breaker vol multiplier (Paper 1 \u00a77, R3 M_3 stage)"
+    },
+    "NOTIONAL": {
+      "value": 1000.0,
+      "description": "fixed position notional in USDC for all simulations"
+    }
+  },
+  "mechanic_descriptions": {
+    "R0": "naive forced expiry \u2014 no resolution-zone rules",
+    "R1": "leverage compression only \u2014 linear ramp from L to 1\u00d7 over \u0394_R",
+    "R2": "R1 + boundary funding correction \u2014 extra C_BOUNDARY funding when |mid-0.5| > DELTA_BOUND",
+    "R3": "full multi-stage halt \u2014 M_1/M_2/M_3 position-size taper + circuit-breaker on vol spike"
+  },
+  "engine_descriptions": {
+    "E0": "baseline engine \u2014 constant volatility estimate, no dynamic margin",
+    "E1": "EMA vol engine \u2014 exponential moving average vol, dynamic margin (no index scaling)",
+    "E2": "recalibrated E1 \u2014 M_SIGMA\u00b7\u03c3\u0302 + M_JUMP\u00b7p_jump\u00b7\u03c6 + KAPPA_BOOK/depth (CC-007b: no \u00b7index on vol term)"
+  }
+}

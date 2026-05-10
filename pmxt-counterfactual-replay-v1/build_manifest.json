@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "tag": "pmxt-counterfactual-replay-v1",
+  "released": "2026-05-10",
+  "build_elapsed_s": 0.064,
+  "sources": {
+    "e2_results": "evaluation/output/e2b/results.json",
+    "e3_results": "evaluation/output/e3/results.json"
+  },
+  "files": {
+    "data/aggregates.json": {
+      "sha256": "c4d57b36da6e2fe25cc749bb4b7e4a6bfc4b0547d8d91d9b6a23da55418131bb",
+      "size_bytes": 1527
+    },
+    "data/e2a-survivability-v1.parquet": {
+      "sha256": "730d85002bcfc25a95ee41cc95f8c4b860de7fd9535709bef807fe8da193888b",
+      "size_bytes": 3193,
+      "n_rows": 75
+    },
+    "data/e2b-drawdown-v1.parquet": {
+      "sha256": "5fb6ab8ea4594a73b810e83e8c8164d18b398cbc438179723b8db453d9d9fbf9",
+      "size_bytes": 1295,
+      "n_rows": 15
+    },
+    "data/e2c-pnl-distribution-v1.parquet": {
+      "sha256": "b612258c5a38bb6ea107a3590907aaaabc2841783ea8275793bd62b2f23ec68e",
+      "size_bytes": 2329,
+      "n_rows": 3
+    },
+    "data/e3-bad-debt-v1.parquet": {
+      "sha256": "25a12328e1cdfe88dc7d637bb7466a0f2162c952b554f64277775f079795b498",
+      "size_bytes": 2137,
+      "n_rows": 80
+    },
+    "data/e3-liquidation-rate-v1.parquet": {
+      "sha256": "dff03bbff47f8be8bd156c76f1bcc14429a3e24a83f8a361eaefcb73374832a7",
+      "size_bytes": 1772,
+      "n_rows": 80
+    },
+    "data/e3-pnl-v1.parquet": {
+      "sha256": "cdb97e71bc092964a761fb7105dbe5932be7d04d29bf663aa0cafcf90615fd78",
+      "size_bytes": 2145,
+      "n_rows": 80
+    },
+    "data/engine-parameters-v1.json": {
+      "sha256": "bbc1aa4111f5fb68d03bf580c65ed511415064f723e000fcbc5ce3ca47446e85",
+      "size_bytes": 2405
+    }
+  }
+}

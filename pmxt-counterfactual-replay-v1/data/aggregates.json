@@ -1,0 +1,61 @@
+{
+  "e2_experiment": {
+    "n_markets": 13306,
+    "engines": [
+      "E0",
+      "E1",
+      "E2"
+    ],
+    "leverages": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "e2a_liquidation_rate_reduction": {
+      "E2_vs_E0_at_L5": -0.05958201257185847,
+      "E1_vs_E0_at_L5": -0.04373287487240107
+    },
+    "e2a_passes_floor": false,
+    "e2b_drawdown_reduction_E2_vs_E0": 0.051373001036129295,
+    "e2b_passes_floor": false,
+    "e2c_robustness_check": true
+  },
+  "e3_experiment": {
+    "n_markets": 13115,
+    "mechanics": [
+      "R0",
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "leverages": [
+      2,
+      3,
+      5,
+      10
+    ],
+    "reductions": {
+      "R3_vs_R0_liquidation": 0.8039860681114551,
+      "R3_vs_R0_bad_debt": -0.023592151837231956,
+      "R1_vs_R0_liquidation": -0.05263157894736836,
+      "R2_vs_R0_liquidation": -0.05263157894736836,
+      "R2_vs_R1_liquidation": 0.0,
+      "R3_vs_R2_liquidation": 0.8137867647058823,
+      "R1_vs_R0_bad_debt": 0.0007799718449188475,
+      "R2_vs_R0_bad_debt": -0.015751626526652185,
+      "R3_vs_R2_bad_debt": -0.00771893945903912
+    },
+    "passes_floor_1_liquidation_50pct": true,
+    "passes_floor_2_baddebt_75pct": false,
+    "monotone_R0_to_R3": false,
+    "welfare_pnl_R3_vs_R0_pct_change": -0.01740172628355415
+  },
+  "run_provenance": {
+    "e2_generated_at": "2026-05-08T23:13:55.927476+00:00",
+    "e3_generated_at": "2026-05-09T21:17:44.997667+00:00",
+    "e2_elapsed_s": 15002.807787375,
+    "e3_elapsed_s": 15673.047229457996
+  }
+}

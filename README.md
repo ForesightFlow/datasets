@@ -11,6 +11,7 @@ Public datasets released alongside ForesightFlow research.
 | [polymarket-deadline-ils](polymarket-deadline-ils/) | Population-scale Deadline-ILS (ILS^dl) scores for 88 Polymarket markets across military/geopolitical, regulatory, and corporate categories. Includes LLM-recovered event dates (T_event), bootstrap CIs, and full 2,375-market attrition chain. Snapshot: 2020–2026. | CC-BY 4.0 | 311 KB | `polymarket-deadline-ils-v2` |
 | [polymarket-resolution-typology](polymarket-resolution-typology/) | Three-class classification of 911,237 Polymarket markets by resolution mechanism (deadline_resolved / event_resolved / unclassifiable), with category labels and volume metadata. Snapshot: 2020–2026-04-27. | CC-BY 4.0 | 242 MB (LFS) | `polymarket-resolution-typology-v1` |
 | [pmxt-stylized-facts-v1](pmxt-stylized-facts-v1/) | Per-market stylized-fact measurements (SF1–SF9) for 13,314 resolved Polymarket binary-event markets, week 2026-04-21 to 2026-04-27. Empirical foundation for Nechepurenko (2026) Paper 1 (event-linked perpetuals). | CC-BY 4.0 | 1.6 MB | `pmxt-stylized-facts-v1` |
+| [pmxt-counterfactual-replay-v1](pmxt-counterfactual-replay-v1/) | Counterfactual simulation results (E2 margin recalibration + E3 resolution-zone protocol comparison) for 13,000+ resolved Polymarket binary-event markets. Per-(engine/mechanic, leverage, class) liquidation rates, bad-debt frequencies, drawdown, and PnL. Companion to pmxt-stylized-facts-v1 and Nechepurenko (2026) Paper 1. | CC-BY 4.0 | 19 KB | `pmxt-counterfactual-replay-v1` |
 
 ## Adding a new dataset
 
