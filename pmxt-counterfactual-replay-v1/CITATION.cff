@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "pmxt-counterfactual-replay-v1: Counterfactual Replay Results for Polymarket Binary Markets"
+message: "If you use this dataset, please cite it as below."
+type: dataset
+version: "1.0"
+date-released: "2026-05-10"
+license: CC-BY-4.0
+repository-code: https://github.com/ForesightFlow/datasets
+authors:
+  - family-names: Nechepurenko
+    given-names: Maksym
+    affiliation: Devnull FZCO
+keywords:
+  - prediction markets
+  - Polymarket
+  - perpetual futures
+  - resolution zone
+  - counterfactual simulation
+  - margin design
+  - binary options
+abstract: >
+  Per-(engine/mechanic, leverage, class) summary statistics from two counterfactual
+  simulation experiments (E2 and E3) on 13,000+ resolved Polymarket binary-event
+  markets. E2 compares three margin-engine variants (E0 baseline, E1 EMA-vol,
+  E2 recalibrated) on survivability and drawdown. E3 compares four resolution-zone
+  mechanics (R0–R3) on final-hour liquidation rates, bad-debt frequency, and
+  average PnL across leverages 2×–10×. Companion to pmxt-stylized-facts-v1 and
+  Nechepurenko (2026) Paper 1.
+references:
+  - type: article
+    title: >
+      Resolution-Aware Perpetual Futures on Binary Prediction Markets:
+      An Empirical Risk-Design Framework Using Polymarket Data
+    authors:
+      - family-names: Nechepurenko
+        given-names: Maksym
+    year: 2026
+    notes: "Working paper"
