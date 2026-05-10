@@ -2,10 +2,12 @@ cff-version: 1.2.0
 title: "pmxt-counterfactual-replay-v1: Counterfactual Replay Results for Polymarket Binary Markets"
 message: "If you use this dataset, please cite it as below."
 type: dataset
-version: "1.0"
+version: "1.0.0"
 date-released: "2026-05-10"
+doi: 10.5281/zenodo.20108387
 license: CC-BY-4.0
-repository-code: https://github.com/ForesightFlow/datasets
+repository-code: https://github.com/ForesightFlow/datasets/tree/main/pmxt-counterfactual-replay-v1
+url: "https://doi.org/10.5281/zenodo.20108387"
 authors:
   - family-names: Nechepurenko
     given-names: Maksym

@@ -193,27 +193,47 @@ This dataset is a snapshot frozen at the 2026-04-27T23:59:59Z cutoff. The styliz
 
 ## Citation
 
-If you use this dataset in academic work, please cite both the dataset and the companion paper:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20107449.svg)](https://doi.org/10.5281/zenodo.20107449)
+
+If you use this dataset, please cite:
 
 ```bibtex
-@dataset{pmxt2026,
+@dataset{nechepurenko_pmxt_stylized_facts_v1_2026,
   author       = {Nechepurenko, Maksym},
-  title        = {{Polymarket Stylized Facts Dataset}, v1},
+  title        = {{pmxt-stylized-facts-v1}: Stylized Facts on
+                  {Polymarket} Binary-Event Markets
+                  (Empirical Week 2026-04-21 to 2026-04-27)},
   year         = {2026},
-  publisher    = {GitHub},
-  url          = {https://github.com/ForesightFlow/datasets/tree/main/pmxt-stylized-facts-v1},
-  note         = {Tag: pmxt-stylized-facts-v1. Snapshot cutoff: 2026-04-27.}
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.20107449},
+  url          = {https://doi.org/10.5281/zenodo.20107449}
 }
+```
 
-@misc{nechepurenko2026pirap,
+If you also use the companion simulation outputs, please cite Paper 1:
+
+```bibtex
+@unpublished{nechepurenko_pirap_2026,
   author = {Nechepurenko, Maksym},
-  title  = {Resolution-Aware Perpetual Futures on Binary Prediction Markets: An Empirical Risk-Design Framework Using Polymarket Data},
+  title  = {Resolution-Aware Perpetual Futures on Binary Prediction
+            Markets: An Empirical Risk-Design Framework Using
+            Polymarket Data},
   year   = {2026},
-  note   = {Working paper}
+  note   = {Working paper. arXiv DOI to be added when assigned.}
 }
 ```
 
 A `CITATION.cff` file is included for automated citation generation.
+
+---
+
+## Companion Datasets
+
+This dataset is part of the PMXT bundle family for the Event-Linked Perpetuals research programme:
+
+- **Bundle 2 (`pmxt-counterfactual-replay-v1`)**: Engine and resolution-zone protocol comparison outputs from CC-007b (E2) and CC-008 (E3). DOI: [10.5281/zenodo.20108387](https://doi.org/10.5281/zenodo.20108387)
+- **Bundle 3 (`pmxt-behavioral-clusters-v1`, forthcoming)**: Per-trader behavioral cluster labels from Paper 4 (release after Paper 4 empirical run).
 
 ---
 

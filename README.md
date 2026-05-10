@@ -13,6 +13,20 @@ Public datasets released alongside ForesightFlow research.
 | [pmxt-stylized-facts-v1](pmxt-stylized-facts-v1/) | Per-market stylized-fact measurements (SF1–SF9) for 13,314 resolved Polymarket binary-event markets, week 2026-04-21 to 2026-04-27. Empirical foundation for Nechepurenko (2026) Paper 1 (event-linked perpetuals). | CC-BY 4.0 | 1.6 MB | `pmxt-stylized-facts-v1` |
 | [pmxt-counterfactual-replay-v1](pmxt-counterfactual-replay-v1/) | Counterfactual simulation results (E2 margin recalibration + E3 resolution-zone protocol comparison) for 13,000+ resolved Polymarket binary-event markets. Per-(engine/mechanic, leverage, class) liquidation rates, bad-debt frequencies, drawdown, and PnL. Companion to pmxt-stylized-facts-v1 and Nechepurenko (2026) Paper 1. | CC-BY 4.0 | 19 KB | `pmxt-counterfactual-replay-v1` |
 
+---
+
+## PMXT Bundle Family (Event-Linked Perpetuals)
+
+Datasets released as the empirical foundation for the four-paper Event-Linked Perpetuals programme by Maksym Nechepurenko (Devnull Research). See each bundle's README for schema, methodology, and citation details.
+
+| Bundle | Folder | DOI | Status |
+|---|---|---|---|
+| Bundle 1 | [`pmxt-stylized-facts-v1/`](./pmxt-stylized-facts-v1) | [10.5281/zenodo.20107449](https://doi.org/10.5281/zenodo.20107449) | Released |
+| Bundle 2 | [`pmxt-counterfactual-replay-v1/`](./pmxt-counterfactual-replay-v1) | [10.5281/zenodo.20108387](https://doi.org/10.5281/zenodo.20108387) | Released |
+| Bundle 3 | `pmxt-behavioral-clusters-v1/` | TBD | Forthcoming (after Paper 4 empirical run) |
+
+---
+
 ## Adding a new dataset
 
 Create a subdirectory under the repo root. Each dataset directory must contain:
@@ -79,6 +93,8 @@ Full preprint: <https://foresightflow.org/publications/coordination-architectura
   title  = {Resolution-Aware Perpetual Futures on Binary Prediction Markets: An Empirical Risk-Design Framework Using Polymarket Data},
   author = {Nechepurenko, Maksym},
   year   = {2026},
-  note   = {Working paper. Companion to pmxt-stylized-facts-v1 dataset.}
+  note   = {Working paper. Companion datasets: pmxt-stylized-facts-v1
+            (DOI: 10.5281/zenodo.20107449), pmxt-counterfactual-replay-v1
+            (DOI: 10.5281/zenodo.20108387).}
 }
 ```
