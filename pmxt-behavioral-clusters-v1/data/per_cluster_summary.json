@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-05-11T06:25:11.884084+00:00",
+  "n_clusters": 5,
+  "n_noise": 0,
+  "total_addresses": 78953,
+  "attribution_constraint": "CC-013 Amendment v2 (G-QUOTE-LIFE universal FAIL): archetype labels are fill-side proxies, not quote-lifecycle archetypes. 'fill-MM' reflects fill-side high-frequency symmetric behavior, not confirmed market-making (which requires OrderPlaced/OrderCancelled, off-chain on Polymarket). Address-level MM and LP characterization is withdrawn per \u00a75/\u00a77 of the amendment.",
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "is_noise": false,
+      "n_addresses": 13775,
+      "notional_share": 0.075307,
+      "archetype": "SPECIALIST",
+      "centroid": {
+        "f2_trade_intensity": 1.814226,
+        "f3_log_avg_notional": 1.494335,
+        "f5_directional_ratio": 0.137816,
+        "f6_market_hhi": 0.587294,
+        "f7_intraday_entropy": 0.609797,
+        "f9_log_market_breadth": 1.218785
+      },
+      "ci_lo_95": {
+        "f2_trade_intensity": 1.80168,
+        "f3_log_avg_notional": 1.483343,
+        "f5_directional_ratio": 0.127371,
+        "f6_market_hhi": 0.584247,
+        "f7_intraday_entropy": 0.600015,
+        "f9_log_market_breadth": 1.21345
+      },
+      "ci_hi_95": {
+        "f2_trade_intensity": 1.828747,
+        "f3_log_avg_notional": 1.50556,
+        "f5_directional_ratio": 0.147325,
+        "f6_market_hhi": 0.590641,
+        "f7_intraday_entropy": 0.619148,
+        "f9_log_market_breadth": 1.223851
+      }
+    },
+    {
+      "cluster_id": 1,
+      "is_noise": false,
+      "n_addresses": 16786,
+      "notional_share": 0.459892,
+      "archetype": "fill-MM",
+      "centroid": {
+        "f2_trade_intensity": 3.118686,
+        "f3_log_avg_notional": 0.736081,
+        "f5_directional_ratio": 0.071077,
+        "f6_market_hhi": 0.019775,
+        "f7_intraday_entropy": 2.74105,
+        "f9_log_market_breadth": 4.892543
+      },
+      "ci_lo_95": {
+        "f2_trade_intensity": 3.102322,
+        "f3_log_avg_notional": 0.729344,
+        "f5_directional_ratio": 0.063686,
+        "f6_market_hhi": 0.019438,
+        "f7_intraday_entropy": 2.734752,
+        "f9_log_market_breadth": 4.878421
+      },
+      "ci_hi_95": {
+        "f2_trade_intensity": 3.133129,
+        "f3_log_avg_notional": 0.743365,
+        "f5_directional_ratio": 0.078785,
+        "f6_market_hhi": 0.02015,
+        "f7_intraday_entropy": 2.747073,
+        "f9_log_market_breadth": 4.906338
+      }
+    },
+    {
+      "cluster_id": 2,
+      "is_noise": false,
+      "n_addresses": 13626,
+      "notional_share": 0.451432,
+      "archetype": "fill-LP",
+      "centroid": {
+        "f2_trade_intensity": 1.833308,
+        "f3_log_avg_notional": 1.974116,
+        "f5_directional_ratio": -0.115204,
+        "f6_market_hhi": 0.172267,
+        "f7_intraday_entropy": 1.733296,
+        "f9_log_market_breadth": 2.510032
+      },
+      "ci_lo_95": {
+        "f2_trade_intensity": 1.823907,
+        "f3_log_avg_notional": 1.966739,
+        "f5_directional_ratio": -0.123207,
+        "f6_market_hhi": 0.170519,
+        "f7_intraday_entropy": 1.722583,
+        "f9_log_market_breadth": 2.49853
+      },
+      "ci_hi_95": {
+        "f2_trade_intensity": 1.843839,
+        "f3_log_avg_notional": 1.982421,
+        "f5_directional_ratio": -0.107302,
+        "f6_market_hhi": 0.174012,
+        "f7_intraday_entropy": 1.744207,
+        "f9_log_market_breadth": 2.521432
+      }
+    },
+    {
+      "cluster_id": 3,
+      "is_noise": false,
+      "n_addresses": 20033,
+      "notional_share": 0.007626,
+      "archetype": "RETAIL",
+      "centroid": {
+        "f2_trade_intensity": 1.919574,
+        "f3_log_avg_notional": 0.678956,
+        "f5_directional_ratio": -0.310077,
+        "f6_market_hhi": 0.16161,
+        "f7_intraday_entropy": 1.236423,
+        "f9_log_market_breadth": 2.445671
+      },
+      "ci_lo_95": {
+        "f2_trade_intensity": 1.910953,
+        "f3_log_avg_notional": 0.673868,
+        "f5_directional_ratio": -0.314653,
+        "f6_market_hhi": 0.160188,
+        "f7_intraday_entropy": 1.227289,
+        "f9_log_market_breadth": 2.43731
+      },
+      "ci_hi_95": {
+        "f2_trade_intensity": 1.928181,
+        "f3_log_avg_notional": 0.684377,
+        "f5_directional_ratio": -0.305286,
+        "f6_market_hhi": 0.162904,
+        "f7_intraday_entropy": 1.245688,
+        "f9_log_market_breadth": 2.454087
+      }
+    },
+    {
+      "cluster_id": 4,
+      "is_noise": false,
+      "n_addresses": 14733,
+      "notional_share": 0.005743,
+      "archetype": "RETAIL",
+      "centroid": {
+        "f2_trade_intensity": 1.489312,
+        "f3_log_avg_notional": 0.709133,
+        "f5_directional_ratio": 0.767729,
+        "f6_market_hhi": 0.141426,
+        "f7_intraday_entropy": 1.54257,
+        "f9_log_market_breadth": 2.561261
+      },
+      "ci_lo_95": {
+        "f2_trade_intensity": 1.48282,
+        "f3_log_avg_notional": 0.702189,
+        "f5_directional_ratio": 0.763501,
+        "f6_market_hhi": 0.139796,
+        "f7_intraday_entropy": 1.52924,
+        "f9_log_market_breadth": 2.549655
+      },
+      "ci_hi_95": {
+        "f2_trade_intensity": 1.496671,
+        "f3_log_avg_notional": 0.716725,
+        "f5_directional_ratio": 0.772191,
+        "f6_market_hhi": 0.142857,
+        "f7_intraday_entropy": 1.556748,
+        "f9_log_market_breadth": 2.573771
+      }
+    }
+  ]
+}

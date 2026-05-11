@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-05-11T14:02:55.709102+00:00",
+  "empirical_window": {
+    "start": "2026-04-21",
+    "end": "2026-04-27"
+  },
+  "polygon_block_range": {
+    "start": 86008447,
+    "end": 86107178
+  },
+  "ctf_exchange_contract": "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e",
+  "pmxt_v2_source": "pmxt-stylized-facts-v1 (DOI 10.5281/zenodo.20107449)",
+  "pmxt_v2_path": "/tmp/foresightflow-datasets/pmxt-stylized-facts-v1/data/markets-stylized-facts-v1.parquet",
+  "pipeline_run_date": "2026-05-11",
+  "file_hashes_sha256": {
+    "per_cluster_summary.json": "8b0eb2eec8c1b32f150c5d732164dba3dac5f4c68f370aa001bbd9ee5105673a",
+    "per_market_microstructure.parquet": "2cb4e25de2efd98db74a017b45725eb893f2db58a9fe5f5818ca269f3f7fc96f",
+    "per_market_ils.parquet": "0318c75cdbc8ab690715c17f426788f582a2d9d5273bf749ae7cfc8c49811690",
+    "tier_kmeans_crosstab.json": "214c2fc4bf6b9aaad10a14e87ff535e958e3ef805cbef30d94ef36083e9d4871",
+    "tier_sensitivity.json": "f9437544235c7dcbf9d58233b48487d0345eab4f0b694288d882ea47be226d28",
+    "tier_report.json": "c89f6bdb5f41a2f902b89f838a4f9e5911d8ed4de85936eba01afb3bfbc3b123",
+    "manipulation_patterns.json": "d34a08247ebe6996db05f77ddc441426a56b82305c7129fec22f08f5162f0b84",
+    "gate_report.json": "b07123bd68aa59231fb13f74c678ff5f5053ad77f82edba74d0dd4a978128d9c",
+    "paper1_feedback.json": "0b540909365f44d805062c8f103432443ba9bdfda5332fb3bb084beccc97e0eb",
+    "per_address_tiers.parquet": "3e5aa536cc469bf93ad8041bb41e60167f16b8364c12ee7ada45f022c9a2372d",
+    "per_market_archetype_share.parquet": "c9e5ee1aafaa2ba9be5abc25a5fc9c6798bf39454acfd78c815b725e53d1344f",
+    "cluster_microstructure_bilateral_real.json": "30264142b411cb7f35b380981f20bef1c8be6102a4a4accce09feb1f762d5fc0",
+    "per_cluster_aggregates.parquet": "90d8acbdd574da0e83a43cd276ebe0da4845661161871996b613031932f1f47f"
+  }
+}

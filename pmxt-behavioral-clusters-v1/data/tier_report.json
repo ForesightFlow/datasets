@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-05-11T09:04:03.813273+00:00",
+  "primary_thresholds": {
+    "f2_P95": 3.8806,
+    "f9_P95_hbo": 5.5255,
+    "f9_P75_hfo": 3.6889,
+    "f2_P75": 2.4709,
+    "notional_P75": 1660.38,
+    "whale_threshold": 1000000.0,
+    "episodic_max": 10000.0
+  },
+  "tier_stats": {
+    "whale-tier": {
+      "n": 68,
+      "pct_addresses": 0.09,
+      "notional": 184235935.13,
+      "pct_notional": 27.98
+    },
+    "active-retail": {
+      "n": 2062,
+      "pct_addresses": 2.67,
+      "notional": 70042786.04,
+      "pct_notional": 10.64
+    },
+    "high-breadth-operator": {
+      "n": 2025,
+      "pct_addresses": 2.62,
+      "notional": 7403339.2,
+      "pct_notional": 1.12
+    },
+    "power-trader": {
+      "n": 6738,
+      "pct_addresses": 8.73,
+      "notional": 196835979.52,
+      "pct_notional": 29.89
+    },
+    "high-frequency-operator": {
+      "n": 2952,
+      "pct_addresses": 3.82,
+      "notional": 154865194.38,
+      "pct_notional": 23.52
+    },
+    "episodic-retail": {
+      "n": 63358,
+      "pct_addresses": 82.07,
+      "notional": 45076020.59,
+      "pct_notional": 6.85
+    }
+  },
+  "whale_overlay_count": 68
+}

@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-05-11T14:02:51.862665+00:00",
+  "versions": {
+    "polars": "1.40.1",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "sklearn": "1.8.0",
+    "pyarrow": "14.0.2",
+    "hdbscan": "unknown",
+    "statsmodels": "0.14.0",
+    "python": "3.11.7 (main, Dec 15 2023, 12:09:56) [Clang 14.0.6 ]"
+  }
+}

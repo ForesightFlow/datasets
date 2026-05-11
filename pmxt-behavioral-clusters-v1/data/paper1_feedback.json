@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-05-11T08:21:43.056261+00:00",
+  "n_tests": 6,
+  "tests": [
+    {
+      "test": "T1_mm_depth_contribution",
+      "result": "partial",
+      "archetype": "fill-MM",
+      "amendment_note": "Fill-side proxy test (Amendment v2). Address-level MM characterization withdrawn (G-QUOTE-LIFE FAIL). This tests fill-side high-frequency symmetric behavior, not posted-quote depth provision.",
+      "mm_cluster_trade_intensity": 3.119,
+      "mm_cluster_market_hhi": 0.0198,
+      "sf1_note": "SF1 \u03c1 median=1.649, fraction \u2265 1.5: 51.94%",
+      "interpretation": "fill-MM cluster (fill_intensity=3.1 fills/hr) is consistent with limit-order fill participation. Market concentration (HHI=0.020) suggests broad multi-market participation."
+    },
+    {
+      "test": "T2_arb_resolution_timing",
+      "result": "inconclusive",
+      "note": "No ARB cluster identified."
+    },
+    {
+      "test": "T3_retail_notional_sizing",
+      "result": "measured",
+      "retail_avg_notional_usdc": 4.77,
+      "paper1_fixed_notional": 1000.0,
+      "ratio": 0.005,
+      "interpretation": "Retail-proximate cluster avg notional \u2248 $5 USDC (inconsistent with Paper 1 fixed notional of $1000)."
+    },
+    {
+      "test": "T4_lp_liquidity_floor",
+      "result": "measured",
+      "archetype": "fill-LP",
+      "amendment_note": "Fill-side proxy test (Amendment v2). Address-level LP posted-quote duration characterization withdrawn (G-QUOTE-LIFE FAIL). HHI is fill-side market concentration, not posted-quote depth.",
+      "lp_market_hhi": 0.1723,
+      "lp_log_market_breadth": 2.51,
+      "paper1_depth_eps": 1.0,
+      "interpretation": "fill-LP cluster shows fill-side HHI=0.172 (diversified fills across many markets). Address-level depth-floor analysis requires book snapshot data (G-BOOK, market-window only)."
+    },
+    {
+      "test": "T5_nonretail_notional_fraction",
+      "result": "measured",
+      "non_retail_notional_share": 0.9113,
+      "non_retail_archetypes": [
+        "fill-MM",
+        "ARB",
+        "fill-LP"
+      ],
+      "interpretation": "91.1% of sample notional from fill-side non-retail clusters (fill-MM + ARB + fill-LP). High non-retail fill concentration \u2014 affects Paper 1's market-efficiency and fair-pricing assumptions. Note: 'non-retail' is fill-side proxy attribution (Amendment v2)."
+    },
+    {
+      "test": "T6_cross_class_consistency",
+      "result": "pending",
+      "n_clusters": 5,
+      "archetypes_identified": [
+        "SPECIALIST",
+        "fill-MM",
+        "fill-LP",
+        "RETAIL",
+        "RETAIL"
+      ],
+      "note": "Cross-class consistency test requires joining cluster labels to per-market event_class metadata. Pending full address\u2192market\u2192class attribution chain. Will be completed in Paper 4 r0.5.0 with full pipeline output."
+    }
+  ]
+}

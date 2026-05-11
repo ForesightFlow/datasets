@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-11T14:02:55.708501+00:00",
+  "git_commit": "f5bb50a1aed0872a6e75df351ee93d67ace5fc20",
+  "repository": "https://github.com/ForesightFlow/event-linked-perps",
+  "scripts": {
+    "collection": "evaluation/paper4/collect_orderfilled_events.py",
+    "features": "evaluation/paper4/compute_features.py",
+    "clustering": "evaluation/paper4/run_clustering.py",
+    "archetypes": "evaluation/paper4/per_cluster_microstructure.py",
+    "manipulation": "evaluation/paper4/manipulation_detection.py",
+    "microstructure": "evaluation/paper4/compute_microstructure_metrics.py",
+    "ils": "evaluation/paper4/compute_ils.py",
+    "per_mma": "evaluation/paper4/compute_per_market_address.py",
+    "bilateral_real": "evaluation/paper4/rerun_bilateral_real.py",
+    "feature_tiers": "evaluation/paper4/compute_feature_tiers.py",
+    "bundle": "evaluation/paper4/build_dataset_bundle.py"
+  }
+}

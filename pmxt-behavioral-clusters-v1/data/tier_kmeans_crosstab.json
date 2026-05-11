@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-11T09:04:03.813773+00:00",
+  "crosstab": {
+    "SPECIALIST": {
+      "active-retail": 221,
+      "high-breadth-operator": 0,
+      "high-frequency-operator": 1,
+      "episodic-retail": 12001,
+      "whale-tier": 9,
+      "power-trader": 865
+    },
+    "RETAIL": {
+      "episodic-retail": 33427,
+      "high-breadth-operator": 0,
+      "power-trader": 409,
+      "active-retail": 3,
+      "high-frequency-operator": 6,
+      "whale-tier": 0
+    },
+    "fill-MM": {
+      "active-retail": 39,
+      "episodic-retail": 8035,
+      "whale-tier": 34,
+      "power-trader": 3709,
+      "high-breadth-operator": 2025,
+      "high-frequency-operator": 2936
+    },
+    "fill-LP": {
+      "active-retail": 1799,
+      "whale-tier": 25,
+      "high-frequency-operator": 9,
+      "high-breadth-operator": 0,
+      "power-trader": 1755,
+      "episodic-retail": 9895
+    }
+  }
+}

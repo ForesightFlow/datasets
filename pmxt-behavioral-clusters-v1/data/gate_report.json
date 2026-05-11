@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-05-11T07:03:44.202796+00:00",
+  "amendment": "CC-013 execution amendment v2 \u2014 three-gate structure",
+  "G-FILL": {
+    "gate": "G-FILL",
+    "result": "pass",
+    "verdict": "All executed fills attributed via OrderFilled eth_getLogs on CTFExchange (0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e). Full maker + taker coverage on binary fills; maker-only on NEGRisk adapter fills (0/13356931 fills, 0.0%).",
+    "n_fills": 13356931,
+    "n_negrisk_fills": 0,
+    "n_addresses": 77204,
+    "attribution": "fill-side maker+taker (executed fills only)"
+  },
+  "G-QUOTE-LIFE": {
+    "gate": "G-QUOTE-LIFE",
+    "result": "fail_universal",
+    "verdict": "OrderPlaced / OrderCancelled are off-chain CLOB events on Polymarket \u2014 not on Polygon blockchain, not in PMXT v2, not in any subgraph. No measurement-source upgrade rescues f1 (quote intensity) or f4 (two-sided ratio) at address level. This failure is permanent for the empirical window and is not a contingent execution constraint.",
+    "dropped_features": [
+      "f1_quote_intensity",
+      "f4_twosided_ratio"
+    ],
+    "withdrawn_claims": [
+      "address-level MM characterization (quote-lifecycle required)",
+      "address-level LP posted-quote duration characterization",
+      "spoof patterns defined as post-without-fill",
+      "coordinated quote withdrawal patterns at address level"
+    ]
+  },
+  "G-BOOK": {
+    "gate": "G-BOOK",
+    "result": "pass_partial",
+    "verdict": "PMXT v2 book events include best_bid / best_ask at snapshot frequency. Enables book-level (market-window aggregate) f8_book spread proxy as a covariate. NOT address-level. f8 remains dropped from the address-level clustering vector. f8_book is optional companion for r0.5.0 \u00a75.B context.",
+    "available_as": "market-window covariate (f8_book), not address-level feature",
+    "note": "f8_book from PMXT v2 book snapshots: next iteration, not blocking CC-013"
+  },
+  "operational_feature_vector": [
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "vector_note": "Single-vector reporting: f_trade = {f2, f3, f5, f6, f7, f9}. Dual-vector (nine-feature with fill-side proxies) withdrawn \u2014 no empirically defensible nine-feature vector on PMXT v2.",
+  "overall_pass": true,
+  "mode": "G-FILL pass + G-QUOTE-LIFE universal fail + G-BOOK partial"
+}

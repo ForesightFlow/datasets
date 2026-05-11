@@ -1,0 +1,215 @@
+{
+  "generated_at": "2026-05-11T09:04:03.813877+00:00",
+  "variants": {
+    "f2_P90_f9_P90": {
+      "thresholds": {
+        "f2": 3.2661,
+        "f9_hfo": 4.8363,
+        "f9_hbo": 4.8363,
+        "f2_p75": 2.4709,
+        "notional_p75": 1660.38
+      },
+      "tiers": {
+        "high-breadth-operator": {
+          "n": 3563,
+          "pct": 4.62
+        },
+        "active-retail": {
+          "n": 2060,
+          "pct": 2.67
+        },
+        "high-frequency-operator": {
+          "n": 5640,
+          "pct": 7.31
+        },
+        "episodic-retail": {
+          "n": 61156,
+          "pct": 79.21
+        },
+        "whale-tier": {
+          "n": 68,
+          "pct": 0.09
+        },
+        "power-trader": {
+          "n": 4716,
+          "pct": 6.11
+        }
+      }
+    },
+    "f2_P90_f9_P95": {
+      "thresholds": {
+        "f2": 3.2661,
+        "f9_hfo": 5.5255,
+        "f9_hbo": 5.5255,
+        "f2_p75": 2.4709,
+        "notional_p75": 1660.38
+      },
+      "tiers": {
+        "whale-tier": {
+          "n": 68,
+          "pct": 0.09
+        },
+        "high-breadth-operator": {
+          "n": 953,
+          "pct": 1.23
+        },
+        "active-retail": {
+          "n": 2062,
+          "pct": 2.67
+        },
+        "high-frequency-operator": {
+          "n": 5640,
+          "pct": 7.31
+        },
+        "power-trader": {
+          "n": 5462,
+          "pct": 7.07
+        },
+        "episodic-retail": {
+          "n": 63018,
+          "pct": 81.63
+        }
+      }
+    },
+    "f2_P95_f9_P90": {
+      "thresholds": {
+        "f2": 3.8806,
+        "f9_hfo": 4.8363,
+        "f9_hbo": 4.8363,
+        "f2_p75": 2.4709,
+        "notional_p75": 1660.38
+      },
+      "tiers": {
+        "high-frequency-operator": {
+          "n": 2952,
+          "pct": 3.82
+        },
+        "power-trader": {
+          "n": 5413,
+          "pct": 7.01
+        },
+        "high-breadth-operator": {
+          "n": 5345,
+          "pct": 6.92
+        },
+        "episodic-retail": {
+          "n": 61365,
+          "pct": 79.49
+        },
+        "whale-tier": {
+          "n": 68,
+          "pct": 0.09
+        },
+        "active-retail": {
+          "n": 2060,
+          "pct": 2.67
+        }
+      }
+    },
+    "f2_P95_f9_P95": {
+      "thresholds": {
+        "f2": 3.8806,
+        "f9_hfo": 5.5255,
+        "f9_hbo": 5.5255,
+        "f2_p75": 2.4709,
+        "notional_p75": 1660.38
+      },
+      "tiers": {
+        "high-frequency-operator": {
+          "n": 2952,
+          "pct": 3.82
+        },
+        "high-breadth-operator": {
+          "n": 2025,
+          "pct": 2.62
+        },
+        "episodic-retail": {
+          "n": 63358,
+          "pct": 82.07
+        },
+        "power-trader": {
+          "n": 6738,
+          "pct": 8.73
+        },
+        "whale-tier": {
+          "n": 68,
+          "pct": 0.09
+        },
+        "active-retail": {
+          "n": 2062,
+          "pct": 2.67
+        }
+      }
+    },
+    "f2_P99_f9_P90": {
+      "thresholds": {
+        "f2": 5.3367,
+        "f9_hfo": 4.8363,
+        "f9_hbo": 4.8363,
+        "f2_p75": 2.4709,
+        "notional_p75": 1660.38
+      },
+      "tiers": {
+        "power-trader": {
+          "n": 5884,
+          "pct": 7.62
+        },
+        "episodic-retail": {
+          "n": 61420,
+          "pct": 79.56
+        },
+        "high-breadth-operator": {
+          "n": 7200,
+          "pct": 9.33
+        },
+        "active-retail": {
+          "n": 2060,
+          "pct": 2.67
+        },
+        "whale-tier": {
+          "n": 68,
+          "pct": 0.09
+        },
+        "high-frequency-operator": {
+          "n": 571,
+          "pct": 0.74
+        }
+      }
+    },
+    "f2_P99_f9_P95": {
+      "thresholds": {
+        "f2": 5.3367,
+        "f9_hfo": 5.5255,
+        "f9_hbo": 5.5255,
+        "f2_p75": 2.4709,
+        "notional_p75": 1660.38
+      },
+      "tiers": {
+        "power-trader": {
+          "n": 7682,
+          "pct": 9.95
+        },
+        "high-breadth-operator": {
+          "n": 3388,
+          "pct": 4.39
+        },
+        "active-retail": {
+          "n": 2062,
+          "pct": 2.67
+        },
+        "episodic-retail": {
+          "n": 63432,
+          "pct": 82.16
+        },
+        "whale-tier": {
+          "n": 68,
+          "pct": 0.09
+        },
+        "high-frequency-operator": {
+          "n": 571,
+          "pct": 0.74
+        }
+      }
+    }
+  }
+}

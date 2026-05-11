@@ -1,0 +1,55 @@
+{
+  "clustering_seed": 20260505,
+  "bootstrap_seed_base": 20260505,
+  "bca_seed": 20260505,
+  "kmeans_k": 5,
+  "kmeans_n_init": 20,
+  "kmeans_max_iter": 500,
+  "dbscan_eps_grid": [
+    1.1463,
+    1.6048,
+    2.2925,
+    2.9803,
+    3.4388
+  ],
+  "dbscan_minpts_grid": [
+    10,
+    20,
+    30
+  ],
+  "hdbscan_mcs_grid": [
+    25,
+    40,
+    60
+  ],
+  "hdbscan_ms_grid": [
+    5,
+    10,
+    15
+  ],
+  "hdbscan_noise_threshold": 0.5,
+  "hdbscan_cluster_cap": 20,
+  "winsorize_percentile": 99.5,
+  "ils_scope_threshold": 0.05,
+  "vpin_buckets": 50,
+  "kyle_lambda_window_min": 60,
+  "bh_fdr_alpha": 0.05,
+  "bca_bootstrap_B": 2000,
+  "tier_whale_threshold": 1000000,
+  "tier_episodic_max": 10000,
+  "tier_hfo_f2_pct": 95,
+  "tier_hfo_f9_pct": 75,
+  "tier_hbo_f9_pct": 95,
+  "tier_power_f2_pct": 75,
+  "tier_power_notional_pct": 75,
+  "min_fills_per_address": 5,
+  "ils_clip_lo": -0.5,
+  "ils_clip_hi": 1.5,
+  "kyle_winsorize_pct_lo": 1,
+  "kyle_winsorize_pct_hi": 99,
+  "excluded_addresses": {
+    "0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e": "CTFExchange contract",
+    "0xe3f18acc55091e2c48d883fc8c8413319d4ab7b0": "NEGRisk adapter (0 fills in window)"
+  },
+  "generated_at": "2026-05-11T14:02:51.861356+00:00"
+}

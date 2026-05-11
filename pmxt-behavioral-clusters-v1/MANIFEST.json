@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "tag": "pmxt-behavioral-clusters-v1",
+  "released": "2026-05-11",
+  "cutoff": "2026-04-27T23:59:59Z",
+  "empirical_window": {
+    "start": "2026-04-21",
+    "end": "2026-04-27"
+  },
+  "polygon_block_range": {
+    "start": 86008447,
+    "end": 86107178
+  },
+  "n_markets": 43116,
+  "n_addresses": 77203,
+  "n_fills": 13356931,
+  "build_note": "Full pipeline CC-013 + CC-015. Clustering: DBSCAN rejected (unimodal), HDBSCAN rejected (>50% noise), k-means k=5 fallback (silhouette=0.227). Feature tiers: 6-tier percentile-based classification. Bilateral: 110 tests, 75 BH-FDR significant (α=0.05).",
+  "files": {
+    "data/per_cluster_summary.json": {
+      "sha256": "8b0eb2eec8c1b32f150c5d732164dba3dac5f4c68f370aa001bbd9ee5105673a",
+      "size_bytes": 5353
+    },
+    "data/per_cluster_aggregates.parquet": {
+      "sha256": "90d8acbdd574da0e83a43cd276ebe0da4845661161871996b613031932f1f47f",
+      "size_bytes": 9114,
+      "n_rows": 5
+    },
+    "data/per_market_microstructure.parquet": {
+      "sha256": "2cb4e25de2efd98db74a017b45725eb893f2db58a9fe5f5818ca269f3f7fc96f",
+      "size_bytes": 5106933,
+      "n_rows": 43116
+    },
+    "data/per_market_ils.parquet": {
+      "sha256": "0318c75cdbc8ab690715c17f426788f582a2d9d5273bf749ae7cfc8c49811690",
+      "size_bytes": 2764380,
+      "n_rows": 43116
+    },
+    "data/per_market_archetype_share.parquet": {
+      "sha256": "c9e5ee1aafaa2ba9be5abc25a5fc9c6798bf39454acfd78c815b725e53d1344f",
+      "size_bytes": 4545063,
+      "n_rows": 103559
+    },
+    "data/per_address_tiers.parquet": {
+      "sha256": "3e5aa536cc469bf93ad8041bb41e60167f16b8364c12ee7ada45f022c9a2372d",
+      "size_bytes": 5292288,
+      "n_rows": 77203
+    },
+    "data/cluster_microstructure_bilateral_real.json": {
+      "sha256": "30264142b411cb7f35b380981f20bef1c8be6102a4a4accce09feb1f762d5fc0",
+      "size_bytes": 40239
+    },
+    "data/tier_kmeans_crosstab.json": {
+      "sha256": "214c2fc4bf6b9aaad10a14e87ff535e958e3ef805cbef30d94ef36083e9d4871",
+      "size_bytes": 896
+    },
+    "data/tier_sensitivity.json": {
+      "sha256": "f9437544235c7dcbf9d58233b48487d0345eab4f0b694288d882ea47be226d28",
+      "size_bytes": 4387
+    },
+    "data/tier_report.json": {
+      "sha256": "c89f6bdb5f41a2f902b89f838a4f9e5911d8ed4de85936eba01afb3bfbc3b123",
+      "size_bytes": 1150
+    },
+    "data/manipulation_patterns.json": {
+      "sha256": "d34a08247ebe6996db05f77ddc441426a56b82305c7129fec22f08f5162f0b84",
+      "size_bytes": 17833
+    },
+    "data/gate_report.json": {
+      "sha256": "b07123bd68aa59231fb13f74c678ff5f5053ad77f82edba74d0dd4a978128d9c",
+      "size_bytes": 2345
+    },
+    "data/paper1_feedback.json": {
+      "sha256": "0b540909365f44d805062c8f103432443ba9bdfda5332fb3bb084beccc97e0eb",
+      "size_bytes": 2843
+    }
+  },
+  "counts": {
+    "n_markets": 43116,
+    "n_addresses": 77203,
+    "n_fills": 13356931,
+    "n_clusters": 5,
+    "n_tiers": 6,
+    "n_bilateral_tests": 110,
+    "n_bilateral_sig_bh": 75,
+    "ils_scope_pass": 6406
+  }
+}

@@ -12,6 +12,7 @@ Public datasets released alongside ForesightFlow research.
 | [polymarket-resolution-typology](polymarket-resolution-typology/) | Three-class classification of 911,237 Polymarket markets by resolution mechanism (deadline_resolved / event_resolved / unclassifiable), with category labels and volume metadata. Snapshot: 2020–2026-04-27. | CC-BY 4.0 | 242 MB (LFS) | `polymarket-resolution-typology-v1` |
 | [pmxt-stylized-facts-v1](pmxt-stylized-facts-v1/) | Per-market stylized-fact measurements (SF1–SF9) for 13,314 resolved Polymarket binary-event markets, week 2026-04-21 to 2026-04-27. Empirical foundation for Nechepurenko (2026) Paper 1 (event-linked perpetuals). | CC-BY 4.0 | 1.6 MB | `pmxt-stylized-facts-v1` |
 | [pmxt-counterfactual-replay-v1](pmxt-counterfactual-replay-v1/) | Counterfactual simulation results (E2 margin recalibration + E3 resolution-zone protocol comparison) for 13,000+ resolved Polymarket binary-event markets. Per-(engine/mechanic, leverage, class) liquidation rates, bad-debt frequencies, drawdown, and PnL. Companion to pmxt-stylized-facts-v1 and Nechepurenko (2026) Paper 1. | CC-BY 4.0 | 19 KB | `pmxt-counterfactual-replay-v1` |
+| [pmxt-behavioral-clusters-v1](pmxt-behavioral-clusters-v1/) | Fill-side behavioral clusters, feature tiers, and per-market microstructure signatures from 13.4M `OrderFilled` events on Polymarket CTFExchange (43,116 markets, 77,203 addresses, 2026-04-21 to 2026-04-27). k-means k=5 archetypes, 6 reviewer-defensible feature tiers, bilateral Spearman analysis with BH-FDR correction. Companion to Nechepurenko (2026) Paper 4. | CC-BY 4.0 | 17.8 MB (LFS) | `pmxt-behavioral-clusters-v1` |
 
 ---
 
@@ -23,7 +24,7 @@ Datasets released as the empirical foundation for the four-paper Event-Linked Pe
 |---|---|---|---|
 | Bundle 1 | [`pmxt-stylized-facts-v1/`](./pmxt-stylized-facts-v1) | [10.5281/zenodo.20107449](https://doi.org/10.5281/zenodo.20107449) | Released |
 | Bundle 2 | [`pmxt-counterfactual-replay-v1/`](./pmxt-counterfactual-replay-v1) | [10.5281/zenodo.20108387](https://doi.org/10.5281/zenodo.20108387) | Released |
-| Bundle 3 | `pmxt-behavioral-clusters-v1/` | TBD | Forthcoming (after Paper 4 empirical run) |
+| Bundle 3 | [`pmxt-behavioral-clusters-v1/`](./pmxt-behavioral-clusters-v1) | TBD (Zenodo forthcoming) | Released |
 
 ---
 
@@ -96,5 +97,18 @@ Full preprint: <https://foresightflow.org/publications/coordination-architectura
   note   = {Working paper. Companion datasets: pmxt-stylized-facts-v1
             (DOI: 10.5281/zenodo.20107449), pmxt-counterfactual-replay-v1
             (DOI: 10.5281/zenodo.20108387).}
+}
+```
+
+### Fill-Side Non-Retail Trading on Polymarket
+
+```bibtex
+@misc{nechepurenko2026pmxt_clusters_paper,
+  title  = {Fill-Side Non-Retail Trading on Polymarket: An Empirical Study of Behavioral
+            Tiers and Microstructure Signatures Under Quote-Attribution Constraints},
+  author = {Nechepurenko, Maksym},
+  year   = {2026},
+  note   = {Working paper. Companion dataset: pmxt-behavioral-clusters-v1
+            (DOI: 10.5281/zenodo.XXXXXXXX).}
 }
 ```

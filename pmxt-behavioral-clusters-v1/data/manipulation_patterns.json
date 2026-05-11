@@ -1,0 +1,496 @@
+{
+  "generated_at": "2026-05-11T06:37:23.416085+00:00",
+  "mode": "G-FILL_pass+G-QUOTE-LIFE_fail+G-BOOK_partial",
+  "amendment": "CC-013 execution amendment v2",
+  "wash_volume_candidates": {
+    "count": 3980,
+    "status": "active (G-FILL PASS)",
+    "note": "Fill-side: near-zero net filled position (|buy-sell|/(buy+sell) < 10%) with \u226550 fills. Proxy only; causal intent not claimed per pre-registration.",
+    "entries": [
+      {
+        "from_address": "0x8d10b39465225d7a881b56b4af8354997f0c940a",
+        "trade_count": 406,
+        "net_imbalance_ratio": 0.0906,
+        "total_notional": 3094.48,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x83b83c37e5800bb70cd0ad94624ac185c24e3a1c",
+        "trade_count": 163,
+        "net_imbalance_ratio": 0.0561,
+        "total_notional": 184.44,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x7347d3291b321d2ee8d43d24aff244e7fb8c3d35",
+        "trade_count": 57182,
+        "net_imbalance_ratio": 0.0768,
+        "total_notional": 412280.48,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x93173b86dbe2f2dd9922c751806d306b48cf5a5f",
+        "trade_count": 72736,
+        "net_imbalance_ratio": 0.0058,
+        "total_notional": 78194.21,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x69c7b8de588c68d3927f094eb9ec9a2b1bbeb03c",
+        "trade_count": 2156,
+        "net_imbalance_ratio": 0.0332,
+        "total_notional": 4404.16,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xbc42816d3be0cf9effde3cbb45150e00f8abb12c",
+        "trade_count": 1777,
+        "net_imbalance_ratio": 0.0,
+        "total_notional": 1890.93,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xfd144099a983b0cfdb88d0b89e0ca049fae22267",
+        "trade_count": 946,
+        "net_imbalance_ratio": 0.0578,
+        "total_notional": 52316.7,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x6d3c5bd13984b2de47c3a88ddc455309aab3d294",
+        "trade_count": 7238,
+        "net_imbalance_ratio": 0.0046,
+        "total_notional": 952439.95,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xbfd82f9361838ec786fb1ebfc2a8b1a77575eeca",
+        "trade_count": 266,
+        "net_imbalance_ratio": 0.017,
+        "total_notional": 15049.11,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x36309c6e27fdce6f03ba86f514a6de4afe873f8f",
+        "trade_count": 39344,
+        "net_imbalance_ratio": 0.0318,
+        "total_notional": 30046.55,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x9cb35555b913c805a62a2e34bce4ef14f0e81367",
+        "trade_count": 2845,
+        "net_imbalance_ratio": 0.0068,
+        "total_notional": 27742.72,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x371425ddae0431d92d97d2c2243019e3132f1af6",
+        "trade_count": 109,
+        "net_imbalance_ratio": 0.006,
+        "total_notional": 290.86,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x43a6d60de9824e8ed8b0a2d851f49fcaf1e38b32",
+        "trade_count": 91,
+        "net_imbalance_ratio": 0.0646,
+        "total_notional": 21865.83,
+        "cluster_id": 2
+      },
+      {
+        "from_address": "0xa5ea13a81d2b7e8e424b182bdc1db08e756bd96a",
+        "trade_count": 3131,
+        "net_imbalance_ratio": 0.0999,
+        "total_notional": 3806431.54,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xcfb103c37c0234f524c632d964ed31f117b5f694",
+        "trade_count": 64753,
+        "net_imbalance_ratio": 0.0552,
+        "total_notional": 905483.49,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xb9720495c122f5a68b0b754812c0b8d736f66c79",
+        "trade_count": 2751,
+        "net_imbalance_ratio": 0.1,
+        "total_notional": 6448.06,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x13f1c553fcf25a8a401fb872e7a7855cc701ca5e",
+        "trade_count": 616,
+        "net_imbalance_ratio": 0.0917,
+        "total_notional": 2205.36,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x5987e587d2ea237ac1daaee0cc936e4b4ee4699d",
+        "trade_count": 2295,
+        "net_imbalance_ratio": 0.0205,
+        "total_notional": 8001.29,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x67af214764bd6eda61fadb25cdcbea6d13d761ee",
+        "trade_count": 4174,
+        "net_imbalance_ratio": 0.0373,
+        "total_notional": 42646.07,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xb44276bb49e93f17765d92df28ccf5e6389969af",
+        "trade_count": 67,
+        "net_imbalance_ratio": 0.0706,
+        "total_notional": 504.41,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x0fb2e28aa532baef466c3955a916f451e473f30b",
+        "trade_count": 322,
+        "net_imbalance_ratio": 0.0241,
+        "total_notional": 4382.64,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xde4adf1efe6f68cbab2cc25090d3fdd27fa6beef",
+        "trade_count": 112,
+        "net_imbalance_ratio": 0.0811,
+        "total_notional": 467.77,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x6916cc00aa1c3e75ecf4081df7cae7d2f3592fd4",
+        "trade_count": 847,
+        "net_imbalance_ratio": 0.02,
+        "total_notional": 255174.75,
+        "cluster_id": 2
+      },
+      {
+        "from_address": "0xf7cc2441aedd15cef4e0404957418ddaae1d147e",
+        "trade_count": 134,
+        "net_imbalance_ratio": 0.0578,
+        "total_notional": 421.82,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xd61f7bd333e278af0b7c2dffecca7a8524be608d",
+        "trade_count": 3948,
+        "net_imbalance_ratio": 0.029,
+        "total_notional": 1358.8,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xf55ac8335755e86e7a947156286bed246d0ada31",
+        "trade_count": 1174,
+        "net_imbalance_ratio": 0.0058,
+        "total_notional": 6754.76,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xbf3f1679b9d913f1098d3387bc4459d1dda908e4",
+        "trade_count": 319,
+        "net_imbalance_ratio": 0.0028,
+        "total_notional": 2070.46,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x27ecf1288ded98f5c6183f25197e7ed1837555bc",
+        "trade_count": 2657,
+        "net_imbalance_ratio": 0.0019,
+        "total_notional": 5929.75,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xc89d5c0f4d12aa83475b2b7804995578c46d9dc0",
+        "trade_count": 50063,
+        "net_imbalance_ratio": 0.0728,
+        "total_notional": 211888.92,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xe5055891698b43217f58f15cfef5f231425ee3bf",
+        "trade_count": 2766,
+        "net_imbalance_ratio": 0.0032,
+        "total_notional": 14906.08,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xccf964653d1f65c76b8b69266291a1f02ee419bb",
+        "trade_count": 176,
+        "net_imbalance_ratio": 0.0239,
+        "total_notional": 198.76,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xc0173d8026135988f0cad457971433f63562dd83",
+        "trade_count": 202,
+        "net_imbalance_ratio": 0.0856,
+        "total_notional": 236.21,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x6b17d237e6b7f74ce8171d6dc68e07bc21c803b2",
+        "trade_count": 423,
+        "net_imbalance_ratio": 0.0033,
+        "total_notional": 17931.57,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xed4ec2c5deae2104de104632183f02a271680c76",
+        "trade_count": 168,
+        "net_imbalance_ratio": 0.0738,
+        "total_notional": 192.18,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x9a4729db10b4dfc97c05497414251abc136a35fb",
+        "trade_count": 192,
+        "net_imbalance_ratio": 0.0248,
+        "total_notional": 2118.53,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x8083e610f7b2c13a35ac2e3d75456b2ebda40f88",
+        "trade_count": 175,
+        "net_imbalance_ratio": 0.0357,
+        "total_notional": 194.97,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x9b97ef5bf77ceaf86d0284a8e571c018222e6084",
+        "trade_count": 1087,
+        "net_imbalance_ratio": 0.0716,
+        "total_notional": 85400.09,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x2c1bf2a1f7a2ece9fb1797b874970feaf4ac7768",
+        "trade_count": 763,
+        "net_imbalance_ratio": 0.036,
+        "total_notional": 37226.15,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x8bfeabb33fd2240527eb4474e8a3d20e89528dee",
+        "trade_count": 212,
+        "net_imbalance_ratio": 0.0326,
+        "total_notional": 525.91,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x52d94dbab16167b981d5907d2d94b9d7034e9a41",
+        "trade_count": 2087,
+        "net_imbalance_ratio": 0.0468,
+        "total_notional": 7380.31,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xa853c1c4caf14b3cbba8fe9c466651351a4b94d4",
+        "trade_count": 1120,
+        "net_imbalance_ratio": 0.0842,
+        "total_notional": 365.25,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xc1fad0f7eef3c2e7f5564747df061a7e70f19611",
+        "trade_count": 1382,
+        "net_imbalance_ratio": 0.0488,
+        "total_notional": 5501.47,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x0e1b30c63f6bac4fa1eacc7b852fa7e72e93ecaf",
+        "trade_count": 14981,
+        "net_imbalance_ratio": 0.0327,
+        "total_notional": 1081886.72,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xc72b1820df935e16257f9a359b7ba239fabb5b5e",
+        "trade_count": 1744,
+        "net_imbalance_ratio": 0.0145,
+        "total_notional": 2701.04,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0x20d178acdbf2c96f1a6634c7dc7c9918fdaf75db",
+        "trade_count": 3146,
+        "net_imbalance_ratio": 0.0738,
+        "total_notional": 4339.03,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xf94d126475912e9a21693b0356ff1016daf2cfe1",
+        "trade_count": 2832,
+        "net_imbalance_ratio": 0.0723,
+        "total_notional": 3531.98,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xeee92f1cc6d6e0ad0b4ffda20b01cf3678e27ecb",
+        "trade_count": 4606,
+        "net_imbalance_ratio": 0.0579,
+        "total_notional": 322258.18,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xa5e3044fd953605f9407d58c76e48fd75a394d7e",
+        "trade_count": 2238,
+        "net_imbalance_ratio": 0.0309,
+        "total_notional": 67251.68,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xc3cd1d612bbf9fbf80da5a9bff0b0470cb46816c",
+        "trade_count": 1258,
+        "net_imbalance_ratio": 0.0323,
+        "total_notional": 86565.86,
+        "cluster_id": 1
+      },
+      {
+        "from_address": "0xf370d2032d13686629c0a3a779af7c164d69be29",
+        "trade_count": 239,
+        "net_imbalance_ratio": 0.0748,
+        "total_notional": 553.07,
+        "cluster_id": 1
+      }
+    ]
+  },
+  "book_depth_swings": {
+    "count": 20,
+    "status": "G-BOOK partial \u2014 market-level diagnostic only, not address-level",
+    "note": "Files with \u22651 mid-price swing >10 cents from price_change events. Market-window context covariate. NOT a spoof proxy at address level.",
+    "entries": [
+      {
+        "file": "polymarket_orderbook_2026-04-21T00.parquet",
+        "n_large_swings": 65198039,
+        "max_swing": 0.999,
+        "market_sample": "307830376134333537316338633732663564303037643732383966386466343234326433393637306238346131613761353733646564306633343036323562333139"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-21T08.parquet",
+        "n_large_swings": 62965776,
+        "max_swing": 0.999,
+        "market_sample": "307830656438343234396464656631373835353865313437393563343132623938623032316332343730613335643838363466363233623366636261666430323331"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-21T16.parquet",
+        "n_large_swings": 62306680,
+        "max_swing": 0.999,
+        "market_sample": "307830336130616366396531373561363137303766303539343963313634306161653965643762333339663564623333613034663630653162333539353534616231"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-22T00.parquet",
+        "n_large_swings": 68540812,
+        "max_swing": 0.999,
+        "market_sample": "307838383232356461343339333263393439623738326565313232646463376335343736613562363832333335616439343535646331353035306362313561656234"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-22T08.parquet",
+        "n_large_swings": 68013305,
+        "max_swing": 0.999,
+        "market_sample": "307831623930613731633534366261396534353239623964653539386363653364363037303738343664346530633339666536316432386363326266316435623364"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-22T16.parquet",
+        "n_large_swings": 66389870,
+        "max_swing": 0.999,
+        "market_sample": "307837616531383965636533383165386335386565623135393036343566346664353564343233316663323165303931346666353363306631373637643164353062"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-23T00.parquet",
+        "n_large_swings": 69742193,
+        "max_swing": 0.999,
+        "market_sample": "307830343766353437353463643136396635373564306434393539366564666663393835383737363535623736636465666333316532613130643637353861343030"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-23T08.parquet",
+        "n_large_swings": 62844224,
+        "max_swing": 0.999,
+        "market_sample": "307863656364376561303630313566653361666339656133653533633033633538633530346663613535623037633138633539643562663737613936343163313434"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-23T16.parquet",
+        "n_large_swings": 67308407,
+        "max_swing": 0.999,
+        "market_sample": "307839643565396533643464313336306132393732616662313133323238393333666132646164666135373739396131356165326630613035373864653162643837"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-24T00.parquet",
+        "n_large_swings": 69366458,
+        "max_swing": 0.999,
+        "market_sample": "307839623038393439313466343361646135666566613964326434316230636563363235616135666465353466646165613636396332396266333435343662313533"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-24T08.parquet",
+        "n_large_swings": 63625244,
+        "max_swing": 0.999,
+        "market_sample": "307839383937326635383363663432336566393539623939306361623966333730363564313862353261666537646131366361393461343330363538633737643631"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-24T16.parquet",
+        "n_large_swings": 68457143,
+        "max_swing": 0.999,
+        "market_sample": "307866376137346537316566363961353137396566613538643733633166333636323031396463373836326131623466303063376364306130306237626635373538"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-25T00.parquet",
+        "n_large_swings": 60831213,
+        "max_swing": 0.999,
+        "market_sample": "307834353230616235363438616230343336623461373765646537356636306630653761383539326538353030646531323966626439373464316230623633353335"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-25T08.parquet",
+        "n_large_swings": 76192651,
+        "max_swing": 0.999,
+        "market_sample": "307839353561653831653531326336376237363866643635643037306430626165343231386237336633313366656363636136643031636463313032363063366231"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-25T16.parquet",
+        "n_large_swings": 61093676,
+        "max_swing": 0.999,
+        "market_sample": "307864383563633238343230643663336665383231313636333461613038343433373234653865306331306134633237306262353735383839353962633238663931"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-26T00.parquet",
+        "n_large_swings": 67398997,
+        "max_swing": 0.999,
+        "market_sample": "307830373038363730343036373665316433356137623531623136313236636130366161326436663862333962666639643939636438326161393365363364333865"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-26T08.parquet",
+        "n_large_swings": 64432383,
+        "max_swing": 0.999,
+        "market_sample": "307831353265336236613033356235393762366137613439333866373365663936323162633834616666656363353162386238383966626132356263393330663963"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-26T16.parquet",
+        "n_large_swings": 66511545,
+        "max_swing": 0.999,
+        "market_sample": "307832333364613833656438656165326637363463383064616539633839613562356132313832336139663761333637326165633233623765323932306634383862"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-27T00.parquet",
+        "n_large_swings": 71947251,
+        "max_swing": 0.999,
+        "market_sample": "307864653761396362333733346536303465373434386433303534376265323736653535306466663534386333613832376437333331633730663637333338663832"
+      },
+      {
+        "file": "polymarket_orderbook_2026-04-27T08.parquet",
+        "n_large_swings": 66720196,
+        "max_swing": 0.999,
+        "market_sample": "307863323235656264313434653836613666623230636234633831323733326135323731316132346637306535643636623761353234366261653632333131393435"
+      }
+    ]
+  },
+  "withdrawn_patterns": {
+    "status": "withdrawn per CC-013 Amendment v2 (G-QUOTE-LIFE universal FAIL)",
+    "patterns": [
+      "spoof patterns defined as post-without-fill (require OrderPlaced/OrderCancelled \u2014 off-chain CLOB, no rescue path)",
+      "coordinated quote withdrawal at address level (same reason)"
+    ]
+  }
+}

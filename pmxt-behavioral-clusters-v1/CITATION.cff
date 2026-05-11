@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it using the metadata below."
+title: "PMXT Behavioral Clusters v1 — Non-Retail Polymarket Microstructure Dataset"
+authors:
+  - family-names: Nechepurenko
+    given-names: Maksym
+    affiliation: "Devnull Research / ForesightFlow"
+    email: maksym@devnull.ae
+abstract: >
+  Per-cluster and per-tier aggregate behavioral statistics from a 13.36M fill
+  empirical run on the Polymarket CTFExchange (Polygon mainnet) over 2026-04-21
+  to 2026-04-27, together with per-market microstructure metrics (PR, TS, OI,
+  VPIN, Kyle's λ, SCI) and resolution-anchored informed liquidity scores (ILS
+  at 4 anchor offsets). 43,116 markets, 77,203 addresses, k-means k=5 behavioral
+  partition and feature-tier classification (6 tiers). Bundle 3 of the PMXT
+  family; companion to Paper 4 of the Event-Linked Perpetuals research programme.
+version: "1.0"
+date-released: "2026-05-XX"
+doi: "10.5281/zenodo.XXXXXXXX"
+license: CC-BY-4.0
+repository-code: "https://github.com/ForesightFlow/event-linked-perps"
+url: "https://zenodo.org/record/XXXXXXXX"
+keywords:
+  - prediction markets
+  - Polymarket
+  - market microstructure
+  - behavioral clustering
+  - on-chain trading
+  - informed trading
+  - DeFi
+references:
+  - type: dataset
+    title: "PMXT Stylized Facts v1"
+    doi: "10.5281/zenodo.20107449"
+    authors:
+      - family-names: Nechepurenko
+        given-names: Maksym
+  - type: dataset
+    title: "PMXT Counterfactual Replay v1"
+    doi: "10.5281/zenodo.20108387"
+    authors:
+      - family-names: Nechepurenko
+        given-names: Maksym
