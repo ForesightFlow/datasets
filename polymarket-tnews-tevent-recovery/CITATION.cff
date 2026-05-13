@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+title: "Polymarket T_news / T_event Recovery Dataset"
+abstract: >-
+  A curated dataset of public-event and news-arrival timestamps for 2,052
+  resolved Polymarket markets, recovered across three methodological tiers:
+  UMA Oracle proposer evidence (Tier 1, gold standard), GDELT-based proxy
+  matching (Tier 2, structural), and LLM-assisted multi-source verification
+  (Tier 3, high-stakes cases). Released as a community resource for
+  event-study and information-leakage research on decentralized prediction
+  markets.
+type: dataset
+version: "1.0"
+date-released: "2026-05-13"
+license: CC-BY-4.0
+url: "https://github.com/ForesightFlow/datasets/tree/main/polymarket-tnews-tevent-recovery"
+repository-code: "https://github.com/ForesightFlow/datasets"
+keywords:
+  - prediction-markets
+  - polymarket
+  - event-study
+  - timestamp-recovery
+  - information-leakage
+  - on-chain-forensics
+authors:
+  - family-names: Nechepurenko
+    given-names: Maksym
+    affiliation: "Devnull FZCO"
+    email: "maksym@devnull.ae"
+preferred-citation:
+  type: article
+  title: "Empirical Evaluation of Deadline-Resolved Information Leakage on Documented Polymarket Insider Cases"
+  authors:
+    - family-names: Nechepurenko
+      given-names: Maksym
+      affiliation: "Devnull FZCO"
+  year: 2026
+  doi: "10.48550/arXiv.2605.02286"
+  url: "https://arxiv.org/abs/2605.02286"
+  notes: "SSRN Working Paper 6687398"
+references:
+  - type: article
+    title: "ForesightFlow: An Information Leakage Score Framework for Prediction Markets"
+    authors:
+      - family-names: Nechepurenko
+        given-names: Maksym
+    year: 2026
+    doi: "10.48550/arXiv.2605.00493"
+    url: "https://arxiv.org/abs/2605.00493"

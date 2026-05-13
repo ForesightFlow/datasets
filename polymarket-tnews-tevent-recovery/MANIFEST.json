@@ -1,0 +1,34 @@
+{
+  "dataset_name": "polymarket-tnews-tevent-recovery-v1",
+  "version": "1.0",
+  "snapshot_date": "2026-04-30",
+  "release_date": "2026-05-13",
+  "total_records": 2052,
+  "tier_counts": {
+    "tier1_uma": 12,
+    "tier2_gdelt_proxy": 1993,
+    "tier3_llm": 47
+  },
+  "files": [
+    {
+      "path": "data/tnews_tevent_recovery_v1.jsonl",
+      "sha256": "d30e7ed5bc31ea50695ffe3396b6dc543ca45486bdb8e1147b53640aad237bfe",
+      "size_bytes": 1108069
+    },
+    {
+      "path": "data/tnews_tevent_recovery_v1.csv",
+      "sha256": "3529a61c3dd16297d91eaea7e6625547b5845c30b4b356831b8f4884f4ff405d",
+      "size_bytes": 638404
+    },
+    {
+      "path": "data/tier1_uma_subset.jsonl",
+      "sha256": "a58b0a79dc77681c994462b69c486b715c062409504d87de9240e61a1fd0407a",
+      "size_bytes": 5834
+    },
+    {
+      "path": "data/tier3_llm_subset.jsonl",
+      "sha256": "5f9c81e41626ab9ac529953c4370b304bfa91df511fe5d5f2de3a214e2890def",
+      "size_bytes": 34597
+    }
+  ]
+}
