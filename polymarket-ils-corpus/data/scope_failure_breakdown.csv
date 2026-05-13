@@ -1,0 +1,4 @@
+condition,n_pass,n_fail,pct_fail
+non_trivial_move (|delta_total| >= epsilon),4801,0,0.0
+edge_effect (|p_open - 0.5| <= 0.4),2548,2253,46.93
+scope_all_pass (all conditions met),2548,2253,46.93

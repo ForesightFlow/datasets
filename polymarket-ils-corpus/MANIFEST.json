@@ -1,0 +1,27 @@
+{
+  "version": "ils-corpus-v1",
+  "snapshot_date": "2026-04-30",
+  "generated_at": "2026-05-13T18:07:24.939038+00:00",
+  "files": {
+    "ils_corpus_v1.parquet": {
+      "sha256": "1c2e0b3bf1ed499b84eca5fb2c4a40460a7792d29739ca84e599d26342603dad",
+      "size_bytes": 948919
+    },
+    "ils_corpus_v1.jsonl.gz": {
+      "sha256": "017a4ea907fcb3e788bfcc697b074cacb5a57ca3a940cc3adb334f57fa9be670",
+      "size_bytes": 680789
+    },
+    "clean_scope_subset.jsonl": {
+      "sha256": "c4cfe7951d61d3b9a060936e7dfecec710a9b9bd1433d9c82d3f0bd2a4ee2650",
+      "size_bytes": 2570192
+    },
+    "event_anchored_subset.jsonl": {
+      "sha256": "604f498a3ad4821a6eea63941810c7721e0c98de8525fd4fa540f28c0efb48b4",
+      "size_bytes": 4999
+    },
+    "scope_failure_breakdown.csv": {
+      "sha256": "890cf3d41a4d5a9eb43aa85c438490675bd7cf0fa29d2e6cbb50f67f74a1871c",
+      "size_bytes": 196
+    }
+  }
+}
