@@ -1,0 +1,28 @@
+{
+  "dataset_name": "polymarket-hazard-rates-v1",
+  "version": "1.0",
+  "snapshot_date": "2026-04-30",
+  "release_date": "2026-05-13",
+  "files": [
+    {
+      "path": "data/hazard_rates_v1.json",
+      "sha256": "3a239eb1e2c609c41e632be2043f4bb8bccefde7174c94be9f0aed786d757b3c",
+      "size_bytes": 2946
+    },
+    {
+      "path": "data/hazard_rates_v1.csv",
+      "sha256": "b6b3dcddf0c32275f3a14a4720cf790e3bef3dc04d6ecc3d98da40d20ba1484e",
+      "size_bytes": 1587
+    },
+    {
+      "path": "data/sample_market_ids.jsonl",
+      "sha256": "23b338ce85b4008c7c67b41c34b6d37ffeef5374d660ef63b80cf63f595df231",
+      "size_bytes": 1731
+    },
+    {
+      "path": "figures/hazard_fits.svg",
+      "sha256": "c5ff5fa546ab5dca0cd4e49fbb15933ccfb326cab4566736c4944a84a85bd048",
+      "size_bytes": 64594
+    }
+  ]
+}

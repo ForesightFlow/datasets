@@ -1,0 +1,77 @@
+[
+  {
+    "category": "military_geopolitics",
+    "subcategory": null,
+    "n_markets_fit": 18,
+    "lambda_hat": 0.2413,
+    "lambda_ci_low": 0.143,
+    "lambda_ci_high": 0.3649,
+    "half_life_days": 2.872,
+    "mean_tau_days": 4.144,
+    "ks_pvalue": 0.4255,
+    "ks_statistic": 0.198,
+    "ks_verdict": "adequate",
+    "notes": "Post-esports-correction (v1.1 taxonomy). Previous preliminary estimate (n=9, \u03bb=0.306, half-life=2.3d) lies inside this CI. Full Tier-3 population.",
+    "exclusions": [
+      "esports markets excluded per v1.1 taxonomy correction"
+    ],
+    "sample_period_start": "2023-11-24",
+    "sample_period_end": "2026-04-11"
+  },
+  {
+    "category": "corporate_disclosure",
+    "subcategory": null,
+    "n_markets_fit": 5,
+    "lambda_hat": 0.1556,
+    "lambda_ci_low": 0.0505,
+    "lambda_ci_high": 0.3186,
+    "half_life_days": 4.456,
+    "mean_tau_days": 6.429,
+    "ks_pvalue": 0.6164,
+    "ks_statistic": 0.3121,
+    "ks_verdict": "adequate",
+    "notes": "Small sample (n=5); treat as preliminary. Wide confidence intervals.",
+    "exclusions": [],
+    "preliminary": true,
+    "sample_period_start": "2023-04-25",
+    "sample_period_end": "2026-03-16"
+  },
+  {
+    "category": "regulatory_decision",
+    "subcategory": null,
+    "n_markets_fit": 16,
+    "lambda_hat": 0.0348,
+    "lambda_ci_low": null,
+    "lambda_ci_high": null,
+    "half_life_days": null,
+    "mean_tau_days": 28.761,
+    "ks_pvalue": 0.0227,
+    "ks_statistic": 0.2872,
+    "ks_verdict": "rejected",
+    "sample_period_start": null,
+    "sample_period_end": null,
+    "notes": "KS test rejects exponential family for parent category (p=0.023). The tau distribution is bimodal: a fast subpopulation (tau<5d, n=10) and a slow formal-deliberation subpopulation (tau>25d, n=6). Sub-categorisation by announcement vs formal subcategory was attempted but yielded insufficient sample sizes in each sub-bucket (at most n=1 in Tier-3 with subcategory label; n=15 have subcategory=null). Parent fit NOT recommended for use; sub-category fits will be added in v2 when subcategory labels are available for the full Tier-3 regulatory population.",
+    "exclusions": [
+      "parent category fit not published; KS-rejected"
+    ],
+    "published": false
+  },
+  {
+    "category": "esports",
+    "subcategory": null,
+    "n_markets_fit": 0,
+    "lambda_hat": null,
+    "lambda_ci_low": null,
+    "lambda_ci_high": null,
+    "half_life_days": null,
+    "ks_pvalue": null,
+    "ks_verdict": "skipped",
+    "sample_period_start": null,
+    "sample_period_end": null,
+    "notes": "No Tier-3 LLM-recovered T_event records available for esports category in this snapshot. Esports markets were reclassified out of military_geopolitics per v1.1 taxonomy correction; the first esports-specific Tier-3 recovery pass will be needed before a fit can be computed. Skipped.",
+    "exclusions": [
+      "no Tier-3 records available"
+    ],
+    "published": false
+  }
+]

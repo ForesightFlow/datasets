@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+title: "Polymarket Per-Category Exponential Hazard Rates"
+abstract: >-
+  Per-category exponential hazard fits for the time-to-event distribution on
+  Polymarket deadline-resolved contracts. Each fit reports the MLE point
+  estimate, 95% confidence interval, half-life, KS goodness-of-fit p-value,
+  and underlying sample market IDs. Used as the baseline survival function in
+  the deadline-Information Leakage Score (ILS-dl) framework of the
+  ForesightFlow programme.
+type: dataset
+version: "1.0"
+date-released: "2026-05-13"
+license: CC-BY-4.0
+url: "https://github.com/ForesightFlow/datasets/tree/main/polymarket-hazard-rates"
+repository-code: "https://github.com/ForesightFlow/datasets"
+keywords:
+  - prediction-markets
+  - polymarket
+  - hazard-rate-estimation
+  - survival-analysis
+  - exponential-fit
+  - deadline-resolution
+  - information-leakage
+authors:
+  - family-names: Nechepurenko
+    given-names: Maksym
+    affiliation: "Devnull FZCO"
+    email: "maksym@devnull.ae"
+preferred-citation:
+  type: article
+  title: "Empirical Evaluation of Deadline-Resolved Information Leakage on Documented Polymarket Insider Cases"
+  authors:
+    - family-names: Nechepurenko
+      given-names: Maksym
+      affiliation: "Devnull FZCO"
+  year: 2026
+  doi: "10.48550/arXiv.2605.02286"
+  url: "https://arxiv.org/abs/2605.02286"
+  notes: "SSRN Working Paper 6687398"
+references:
+  - type: article
+    title: "ForesightFlow: An Information Leakage Score Framework for Prediction Markets"
+    authors:
+      - family-names: Nechepurenko
+        given-names: Maksym
+    year: 2026
+    doi: "10.48550/arXiv.2605.00493"
+    url: "https://arxiv.org/abs/2605.00493"
+  - type: article
+    title: "Information Leakage at Population Scale: An Evaluation of the Polymarket Insider-Relevant Subpopulation"
+    authors:
+      - family-names: Nechepurenko
+        given-names: Maksym
+    year: 2026
+    doi: "10.48550/arXiv.2605.00459"
+    url: "https://arxiv.org/abs/2605.00459"
