@@ -17,6 +17,19 @@ Public datasets released alongside ForesightFlow research.
 | [pmxt-counterfactual-replay-v1](pmxt-counterfactual-replay-v1/) | Counterfactual simulation results (E2 margin recalibration + E3 resolution-zone protocol comparison) for 13,000+ resolved Polymarket binary-event markets. Per-(engine/mechanic, leverage, class) liquidation rates, bad-debt frequencies, drawdown, and PnL. Companion to pmxt-stylized-facts-v1 and Nechepurenko (2026) Paper 1. | CC-BY 4.0 | 19 KB | `pmxt-counterfactual-replay-v1` |
 | [pmxt-behavioral-clusters-v1](pmxt-behavioral-clusters-v1/) | Fill-side behavioral clusters, feature tiers, and per-market microstructure signatures from 13.4M `OrderFilled` events on Polymarket CTFExchange (43,116 markets, 77,203 addresses, 2026-04-21 to 2026-04-27). k-means k=5 archetypes, 6 reviewer-defensible feature tiers, bilateral Spearman analysis with BH-FDR correction. Companion to Nechepurenko (2026) Paper 4. | CC-BY 4.0 | 17.8 MB (LFS) | `pmxt-behavioral-clusters-v1` |
 
+## External Mendeley Data records
+
+These independently published datasets are maintained in their own public
+authorities. This repository provides reader-facing links rather than duplicate
+dataset files.
+
+| Dataset | Public record |
+| --- | --- |
+| Axient Venue Emulator Trace Dataset (AVET) | [Mendeley Data V1](https://data.mendeley.com/datasets/p9jhftzzst/1) · [DOI 10.17632/p9jhftzzst.1](https://doi.org/10.17632/p9jhftzzst.1) |
+| Axient Event-Margin Protocol Verification Benchmark (AEMB) | [Mendeley Data V1](https://data.mendeley.com/datasets/6m29zp2mwp/1) · [DOI 10.17632/6m29zp2mwp.1](https://doi.org/10.17632/6m29zp2mwp.1) |
+| Kalshi Multivariate Event Market Materialization Dataset (KMVE) | [Mendeley Data V1](https://data.mendeley.com/datasets/fn65786cg6/1) · [DOI 10.17632/fn65786cg6.1](https://doi.org/10.17632/fn65786cg6.1) |
+| Polymarket Resolution-to-Redemption Evidence Dataset (PRRED) | [Mendeley Data V1](https://data.mendeley.com/datasets/92dzv6s942/1) · [DOI 10.17632/92dzv6s942.1](https://doi.org/10.17632/92dzv6s942.1) |
+
 ---
 
 ## PMXT Bundle Family (Event-Linked Perpetuals)
